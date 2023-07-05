@@ -151,8 +151,10 @@ section.home_banner .home_banner__logotyp {
                     top: -10px;
                     left: 20px;
                     background-color: #FDFDFD;
-                    &.hs-form-radio-display{
+                    &.hs-form-radio-display, &#label-hs_lead_status-bc235f50-5174-433a-9be9-aa2f9969ead7, &.hs-form-booleancheckbox-display{
                         position: relative;
+                        top: 0;
+                        left:0;
                     }
                 }
 
@@ -168,6 +170,12 @@ section.home_banner .home_banner__logotyp {
                         background: #FDFDFD;
                         padding: 0 2rem;
                     }
+                    .hs-input[type="radio"]{
+                        width: 16px;
+                        height: 16px;
+                        accent-color:#F63D37;
+                        margin-right: 8px;
+                    }
 
                     textarea {
                         width: 100%;
@@ -180,8 +188,8 @@ section.home_banner .home_banner__logotyp {
                     }
 
                     .inputs-list {
-
-                        .hs-form-radio {
+                        padding-left: 0;
+                        .hs-form-radio, .hs-form-booleancheckbox {
                             list-style-type: none;
                         }
                     }
@@ -193,7 +201,28 @@ section.home_banner .home_banner__logotyp {
                 }
 
             }
-
+            .hs-fieldtype-radio{
+                margin-top: 1rem;
+                .input{
+                    margin-top: 8px;
+                }
+            }
+            .hs-submit{
+                .actions{
+                    .hs-button{
+                        border: 1px solid #f63d37;
+                        border-radius: 6px;
+                        background: #f63d37;
+                        color: #ffffff;
+                        padding: 12px 36px;
+                        font-weight: 600;
+                        &:hover{
+                            background: #ffffff;
+                            color: #f63d37;
+                        }
+                    }
+                }
+            }
         }
 
 
