@@ -2485,11 +2485,11 @@ ul.slick-dots li.slick-active button {
          columns: 2;
   }
 }
-.text-image-wrapper h2 {
+.text-image-wrapper .container h2 {
   text-align: left;
 }
-.text-image-wrapper .ti-img {
-  border-radius: 1rem;
+.text-image-wrapper .container .row .ti-img img {
+  border-radius: 20px;
 }
 
 #faqAccordion {

@@ -1,8 +1,15 @@
-.text-image-wrapper{
-    h2{
-        text-align: left;
+.text-image-wrapper {
+    .container {
+        h2 {
+            text-align: left;
+        }
+
+        .row {
+            .ti-img {
+                img {
+                    border-radius: 20px;
+                }
+            }
+        }
     }
-    .ti-img {
-        border-radius:1rem;
-    }   
 }
