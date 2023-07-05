@@ -12,9 +12,9 @@
                {{ twi_item.double_text}}
             </div>
 
-            <div class="col-12 col-lg-6 {% if twi_item.ti_border_bottom %}mb-5{% endif %}">
+            <div class="col-12 col-lg-6 ti-img {% if twi_item.ti_border_bottom %}mb-5{% endif %}">
                 
-                <img src="{{ twi_item.double_image.url}}"class="img-fluid my-md-auto" alt="" />
+                <img src="{{ twi_item.double_image.url}}" alt="" />
             </div>
             {% endfor %}
         </div>
