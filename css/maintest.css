@@ -2498,6 +2498,7 @@ ul.slick-dots li.slick-active button {
 }
 #faqAccordion h3 {
   text-align: center;
+  font-size: 2rem;
 }
 #faqAccordion .accordion-collapse {
   border-top: #F63D37 0.25px solid;
