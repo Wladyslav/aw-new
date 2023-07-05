@@ -14,19 +14,28 @@
                 </h1>
                 <h4 class="hero-short-desc">{{ section.h_short_desc }}</h4>
                 <h4>{{ section.h_description }}</h4>
+                {% if not section.img_to_form %}
                 <button  class="btn btn-red popup-open">Skontaktuj się z nami</button>
-                
+                {% endif %}     
             </div>
             <div class="d-flex col-12 col-md-6">
+                {% if section.img_to_form %}
+                <div class="hero-form-wrapper">
+                    <h3>Wypełnij formularz i otrzymaj wycenę</h3>
+                {{ do_shortcode('[hubspot type="form" portal="139608152" id="bc235f50-5174-433a-9be9-aa2f9969ead7"]') }}
+                </div>
+                {% else %}
                 <img src="{{ section.h_obraz.url}}"class="img-fluid my-md-auto" alt="" />
+                {% endif %}          
             </div>
         </div>
     </div>
 </section>
+{% if not section.img_to_form %}
 <div class="contact-form-popup">
     <div class="container contact-form-popup-wrapper">
         <span class="close-button">&times;</span>
     {% if section.h_form %}{{ do_shortcode(section.h_form) }} {% else %} {{ do_shortcode('[hubspot type="form" portal="139608152" id="e44224d7-59e4-42b3-bb57-86b0d07b0f61"]') }}  {% endif %}
     </div>  
 </div>
-
+{% endif %}

@@ -13,7 +13,7 @@ section.home_banner {
         font-size: 2rem;
         color: #F63D37;
         font-weight: 600;
-        line-height:2.2rem;
+        line-height: 2.2rem;
     }
 
 }
@@ -133,4 +133,70 @@ section.home_banner .home_banner__logotyp {
     background: url(../img/logotyp_aw.svg);
     right: 15px;
     bottom: -10px
+}
+
+.hero-form-wrapper {
+    padding: 2rem;
+    border-radius: 18px;
+    background: #FEFEFE;
+    box-shadow: 0px 29px 110px 0px rgba(246, 61, 55, 0.19);
+
+    .hbspt-form {
+        form {
+            .hs-form-field {
+                position: relative;
+
+                label {
+                    position: absolute;
+                    top: -10px;
+                    left: 20px;
+                    background-color: #FDFDFD;
+                    &.hs-form-radio-display{
+                        position: relative;
+                    }
+                }
+
+                .input {
+                    margin-top: 1.5rem;
+                    .hs-input[type="text"],
+                    .hs-input[type="email"],
+                    .hs-input[type="tel"] {
+                        width: 100%;
+                        height: 51px;
+                        border-radius: 8px;
+                        border: 1px solid#F63D37;
+                        background: #FDFDFD;
+                        padding: 0 2rem;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        height: 120px;
+                        resize: none;
+                        border-radius: 8px;
+                        border: 1px solid#F63D37;
+                        background: #FDFDFD;
+                        padding: 1.5rem;
+                    }
+
+                    .inputs-list {
+
+                        .hs-form-radio {
+                            list-style-type: none;
+                        }
+                    }
+                }
+                .hs-error-msgs{
+                    li{
+                        list-style-type: none;
+                    }
+                }
+
+            }
+
+        }
+
+
+    }
+
 }

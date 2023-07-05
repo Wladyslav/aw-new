@@ -997,6 +997,53 @@ section.home_banner .home_banner__logotyp {
   bottom: -10px;
 }
 
+.hero-form-wrapper {
+  padding: 2rem;
+  border-radius: 18px;
+  background: #FEFEFE;
+  box-shadow: 0px 29px 110px 0px rgba(246, 61, 55, 0.19);
+}
+.hero-form-wrapper .hbspt-form form .hs-form-field {
+  position: relative;
+}
+.hero-form-wrapper .hbspt-form form .hs-form-field label {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background-color: #FDFDFD;
+}
+.hero-form-wrapper .hbspt-form form .hs-form-field label.hs-form-radio-display {
+  position: relative;
+}
+.hero-form-wrapper .hbspt-form form .hs-form-field .input {
+  margin-top: 1.5rem;
+}
+.hero-form-wrapper .hbspt-form form .hs-form-field .input .hs-input[type=text],
+.hero-form-wrapper .hbspt-form form .hs-form-field .input .hs-input[type=email],
+.hero-form-wrapper .hbspt-form form .hs-form-field .input .hs-input[type=tel] {
+  width: 100%;
+  height: 51px;
+  border-radius: 8px;
+  border: 1px solid #F63D37;
+  background: #FDFDFD;
+  padding: 0 2rem;
+}
+.hero-form-wrapper .hbspt-form form .hs-form-field .input textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid #F63D37;
+  background: #FDFDFD;
+  padding: 1.5rem;
+}
+.hero-form-wrapper .hbspt-form form .hs-form-field .input .inputs-list .hs-form-radio {
+  list-style-type: none;
+}
+.hero-form-wrapper .hbspt-form form .hs-form-field .hs-error-msgs li {
+  list-style-type: none;
+}
+
 section.home_tabs {
   padding: 133px 0 128px;
   border-bottom: 1px solid #f63d37;
