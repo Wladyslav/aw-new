@@ -2534,9 +2534,10 @@ ul.slick-dots li.slick-active button {
   }
   .text-number-wrapper .tn-border .text-number-heading {
     text-align: center;
+    font-size: 2.5rem;
   }
   .text-number-wrapper .tn-heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 .text-columns-wrapper .text-columns-heading {
