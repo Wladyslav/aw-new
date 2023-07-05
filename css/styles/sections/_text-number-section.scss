@@ -4,7 +4,9 @@
     .text-number-heading {
         margin-bottom: 16px;
     }
-
+    .tn-border {
+        box-shadow: 0px 29px 110px rgba(246, 61, 55, 0.19);
+    }
     .tn-number {
         position: relative;
         font-size: 3rem;
@@ -27,7 +29,7 @@
     }
 
     .tn-heading {
-        font-weight: 400;
+        font-weight: 600;
         margin-bottom: 16px;
         font-size: 1.5rem;
     }
@@ -48,7 +50,7 @@
     .text-number-wrapper {
         .tn-border {
             max-width: 1470px !important;
-            box-shadow: 0px 29px 110px rgba(246, 61, 55, 0.19);
+            
             border-radius: 18px;
             padding: 60px 150px;
 

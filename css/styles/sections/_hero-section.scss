@@ -1,21 +1,28 @@
-
 section.home_banner {
-    padding: 72px 0;
+    padding: 42px 0;
     border-bottom: 1px solid #949494;
     background-image: url(../img/header_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    .hero-short-desc{
+
+    @media (min-width:768px) {
+        padding: 58px 0;
+    }
+
+    .hero-short-desc {
         font-size: 2rem;
         color: #F63D37;
         font-weight: 600;
+        line-height:2.2rem;
     }
+
 }
 
 @media (max-width:767.98px) {
     section.home_banner {
         background: linear-gradient(270.75deg, hsla(1, 100%, 91%, .49) -1.64%, hsla(0, 0%, 96%, 0) 82.2%);
-        .hero-short-desc{
+
+        .hero-short-desc {
             font-size: 1.8rem;
             color: #F63D37;
             font-weight: 600;

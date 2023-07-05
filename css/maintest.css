@@ -104,8 +104,8 @@ input {
 
 .btn {
   padding: 12px 32px;
-  font: 500 24px/36px Catamaran;
-  border-radius: 4px;
+  font: 500 22px/36px Catamaran;
+  border-radius: 12px;
   border: 1px solid #f63d37;
   letter-spacing: 0.5px;
   position: relative;
@@ -700,7 +700,7 @@ button.slick-arrow.slick-next {
 }
 
 .main_header .navbar .navbar-brand img {
-  max-width: 97px;
+  max-width: 120px;
 }
 
 .main_header .navbar .navbar-nav li.item {
@@ -883,16 +883,22 @@ div.n-footer .footer_end a {
 }
 
 section.home_banner {
-  padding: 72px 0;
+  padding: 42px 0;
   border-bottom: 1px solid #949494;
   background-image: url(../img/header_bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 768px) {
+  section.home_banner {
+    padding: 58px 0;
+  }
+}
 section.home_banner .hero-short-desc {
   font-size: 2rem;
   color: #F63D37;
   font-weight: 600;
+  line-height: 2.2rem;
 }
 
 @media (max-width: 767.98px) {
@@ -2408,6 +2414,9 @@ ul.slick-dots li.slick-active button {
 .text-number-wrapper .text-number-heading {
   margin-bottom: 16px;
 }
+.text-number-wrapper .tn-border {
+  box-shadow: 0px 29px 110px rgba(246, 61, 55, 0.19);
+}
 .text-number-wrapper .tn-number {
   position: relative;
   font-size: 3rem;
@@ -2427,7 +2436,7 @@ ul.slick-dots li.slick-active button {
   left: -40px;
 }
 .text-number-wrapper .tn-heading {
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 16px;
   font-size: 1.5rem;
 }
@@ -2442,7 +2451,6 @@ ul.slick-dots li.slick-active button {
 @media (min-width: 768px) {
   .text-number-wrapper .tn-border {
     max-width: 1470px !important;
-    box-shadow: 0px 29px 110px rgba(246, 61, 55, 0.19);
     border-radius: 18px;
     padding: 60px 150px;
   }
@@ -2460,6 +2468,7 @@ ul.slick-dots li.slick-active button {
   font-size: 1.5rem;
   color: #F63D37;
   font-weight: 600;
+  line-height: 1.8rem;
 }
 .text-columns-wrapper .additional-col-desc {
   margin-top: 1rem;
