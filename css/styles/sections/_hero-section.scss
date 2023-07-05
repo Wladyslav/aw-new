@@ -1,12 +1,12 @@
 section.home_banner {
-    padding: 42px 0;
+    padding: 24px 0;
     border-bottom: 1px solid #949494;
     background-image: url(../img/header_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-width:768px) {
-        padding: 58px 0;
+        padding: 32px 0;
     }
 
     .hero-short-desc {
@@ -196,6 +196,7 @@ section.home_banner .home_banner__logotyp {
                             column-count: 2;
                         }
                     }
+                    
                 }
                 .hs-error-msgs{
                     li{

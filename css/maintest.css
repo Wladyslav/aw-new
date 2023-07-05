@@ -880,7 +880,7 @@ div.n-footer .footer_end a {
 }
 
 section.home_banner {
-  padding: 42px 0;
+  padding: 24px 0;
   border-bottom: 1px solid #949494;
   background-image: url(../img/header_bg.svg);
   background-repeat: no-repeat;
@@ -888,7 +888,7 @@ section.home_banner {
 }
 @media (min-width: 768px) {
   section.home_banner {
-    padding: 58px 0;
+    padding: 32px 0;
   }
 }
 section.home_banner .hero-short-desc {
