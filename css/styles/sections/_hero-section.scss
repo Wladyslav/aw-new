@@ -192,6 +192,9 @@ section.home_banner .home_banner__logotyp {
                         .hs-form-radio, .hs-form-booleancheckbox {
                             list-style-type: none;
                         }
+                        &.multi-container{
+                            column-count: 2;
+                        }
                     }
                 }
                 .hs-error-msgs{

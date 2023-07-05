@@ -1051,6 +1051,10 @@ section.home_banner .home_banner__logotyp {
 .hero-form-wrapper .hbspt-form form .hs-form-field .input .inputs-list .hs-form-radio, .hero-form-wrapper .hbspt-form form .hs-form-field .input .inputs-list .hs-form-booleancheckbox {
   list-style-type: none;
 }
+.hero-form-wrapper .hbspt-form form .hs-form-field .input .inputs-list.multi-container {
+  -moz-column-count: 2;
+       column-count: 2;
+}
 .hero-form-wrapper .hbspt-form form .hs-form-field .hs-error-msgs li {
   list-style-type: none;
 }
