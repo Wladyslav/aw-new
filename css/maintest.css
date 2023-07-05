@@ -2488,8 +2488,7 @@ ul.slick-dots li.slick-active button {
 .text-image-wrapper h2 {
   text-align: left;
 }
-
-.ti-img {
+.text-image-wrapper .ti-img {
   border-radius: 1rem;
 }
 
