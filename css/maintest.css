@@ -584,9 +584,6 @@ button.slick-arrow.slick-next {
   height: 40px;
 }
 
-#content {
-  margin-top: 1rem;
-}
 @media (max-width: 768px) {
   #content {
     margin-top: 2rem;
@@ -2938,38 +2935,44 @@ ul.slick-dots li.slick-active button {
 .employees-wrapper .employees-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 3rem;
+  gap: 2.5rem;
   position: relative;
+  justify-content: space-between;
 }
 .employees-wrapper .employees-content .single-employee {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 .employees-wrapper .employees-content .single-employee .team-item-img {
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 292px;
   height: 292px;
   -o-object-position: top;
      object-position: top;
-  position: relative;
+  border-radius: 8px 8px 0 0;
 }
 .employees-wrapper .employees-content .single-employee .person-name-kontakt {
   font-weight: 600;
-  margin-top: 1rem;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .employees-wrapper .employees-content .single-employee .person-name-kontakt {
     font-size: 2rem;
+    padding: 0 1rem;
   }
 }
 @media (min-width: 768px) {
   .employees-wrapper .employees-content .single-employee .person-job-kontakt {
     font-size: 1.25rem;
+    padding: 0 1rem;
   }
+}
+.employees-wrapper .employees-content .single-employee:nth-child(odd) .person-name-kontakt {
+  background-color: #f53c37;
+}
+.employees-wrapper .employees-content .single-employee:nth-child(even) .person-name-kontakt {
+  background-color: #252525;
 }
 
 .contact-form-popup {
