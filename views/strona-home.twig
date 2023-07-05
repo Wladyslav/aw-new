@@ -1,0 +1,478 @@
+{{ function('get_header', '') }}
+
+
+<section class="home_banner">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1 class="off-loop">
+                    <div class="heading">{{o.home_banner_h1}}</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="533" height="23" viewBox="0 0 533 23" fill="none">
+                        <path d="M3 7.56831C194 0.0682354 394 3.06824 527.778 7.56831C536.393 7.56831 510.615 9.32312 502 9.4572C384.431 11.2871 264.363 9.46644 147.028 14.2072C144.681 14.3021 142.166 14.0545 139.833 14.3461C137.567 14.6294 144.383 14.8087 146.667 14.8461C212.941 15.9326 279.232 16.6703 345.5 18.0684C362.066 18.4179 378.523 19.9936 395.083 20.3184" stroke="#F63D37" stroke-width="5" stroke-linecap="round" />
+                    </svg>
+                </h1>
+                <h4>{{o.home_banner_h4}}
+                </h4>
+                <button class="btn btn-red"><a href="{{o.home_banner_btn1_link}}">{{o.home_banner_btn1_text}}</a></button>
+                <button class="btn btn-border-only"><a href="{{o.home_banner_btn2_link}}">{{o.home_banner_btn2_text}}</a></button>
+            </div>
+            <div class="d-flex col-12 col-md-6">
+                <img src="{{o.home_banner_img.url}}" class="img-fluid my-md-auto" alt="banner 01" />
+            </div>
+        </div>
+        <!--            <div class="home_banner__logotyp"></div>-->
+    </div>
+</section>
+
+<section class="home_clients_banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <span>{{o.home_clients_banner_h1}}</span>
+                <div class="d-flex justify-content-between home_clients_banner_element">
+                    {% for i in o.home_clients_banner_images %}
+                    <div class="col">
+                        <img src="{{i.img.url}}" alt="{{i.img.alt}}" />
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home_tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>
+                    {{o.home_tabs_h1}}
+                </h2>
+                <nav>
+                    <div class="nav nav-tabs row" id="nav-tab" role="tablist">
+                        <button class="active col-12 col-lg-4 d-flex justify-lg-content-around nav-link" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true">
+                            <span class="home_tabs--digit">01</span>
+                            <div class="mx-sm-auto">
+                                <span class="home_tabs--title d-block">{{o.home_tabs_1_title}}</span>
+                                <p>{{o.home_tabs_1_desc}}</p>
+                            </div>
+                        </button>
+                        <button class="col-12 col-lg-4 d-flex justify-lg-content-around nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2" aria-selected="true">
+                            <span class="home_tabs--digit">02</span>
+                            <div class="mx-sm-auto">
+                                <span class="home_tabs--title d-block">{{o.home_tabs_2_title}}</span>
+                                <p>{{o.home_tabs_2_desc}}</p>
+                            </div>
+                        </button>
+                        <button class="col-12 col-lg-4 d-flex justify-lg-content-around nav-link" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button" role="tab" aria-controls="nav-3" aria-selected="true">
+                            <span class="home_tabs--digit">03</span>
+                            <div class="mx-sm-auto">
+                                <span class="home_tabs--title d-block">{{o.home_tabs_3_title}}</span>
+                                <p>{{o.home_tabs_3_desc}}</p>
+                            </div>
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 order-1 order-lg-0">
+                                <div class="left-box">
+                                    <h1>{{o.home_tabs_1_c_title}}</h1>
+                                    <h4 class="mt-3">{{o.home_tabs_1_c_desc}}</h4>
+                                    <button class="btn no-border arrow ps-0 text-red mt-5">
+                                        <a href="{{o.home_tabs_1_button_link}}">{{o.home_tabs_1_button_title}}</a>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                                <div class="img_bg position-relative">
+                                    <img src="{{o.home_tabs_1_c_img.url}}" class="img-fluid w-100" alt="{{o.home_tabs_1_c_img.alt}}" />
+                                    <div class="image__circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="left-box">
+                                    <h1>{{o.home_tabs_2_c_title}}</h1>
+                                    <h4 class="mt-3">{{o.home_tabs_2_c_desc}}</h4>
+                                    <button class="btn no-border arrow ps-0 text-red mt-5">
+                                        <a href="{{o.home_tabs_2_button_link}}">{{o.home_tabs_2_button_title}}</a>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="img_bg position-relative">
+                                    <img src="{{o.home_tabs_2_c_img.url}}" class="img-fluid w-100" alt="{{o.home_tabs_2_c_img.alt}}" />
+                                    <div class="image__circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="left-box">
+                                    <h1>{{o.home_tabs_3_c_title}}</h1>
+                                    <h4 class="mt-3">{{o.home_tabs_3_c_desc}}</h4>
+                                    <button class="btn no-border arrow ps-0 text-red mt-5">
+                                        <a href="{{o.home_tabs_3_button_link}}">{{o.home_tabs_3_button_title}}</a>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="img_bg position-relative">
+                                    <img src="{{o.home_tabs_3_c_img.url}}" class="img-fluid w-100" alt="{{o.home_tabs_3_c_img.alt}}" />
+                                    <div class="image__circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-12 col-xl-8 mx-auto">
+                <div class="home_tabs__newsletter">
+                    <h3 class="text-center mb-3">{{o.home_tabs__newsletter_h1}}</h3>
+                    <div class="text-center">
+                        <input type="text" placeholder="{{o.home_tabs__newsletter_input}}" />
+                        <button class="btn btn-red ms-3 mt-2 mt-lg-0">{{o.home_tabs__newsletter_button}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="statistics">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-12 col-lg-5">
+                <h2>
+                    {{o.statistics_h1}}
+                </h2>
+
+                <p class="mt-5">
+                    {{o.statistics_content_left}}
+                </p>
+
+                <div class="d-inline-flex mb-3 mb-md-0 mt-4 mt-md-5 offset-0 flex-column flex-md-row offset-md-2 offset-lg-0 statistics__switch">
+                    <div class="before">{{o.statistics_before}}</div>
+                    <div class="statistics__switch--area my-auto">
+                        <input type="checkbox" class="multi-switch" value="0">
+                    </div>
+                    <div class="after active">{{o.statistics_after}}</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+                <div class="row statistics__right position-relative">
+                    <div class="col-12 col-lg-10 my-3 my-lg-0 offset-lg-2">
+                        <p>{{o.statistics_content_right}}</p>
+                        <img src="{{o.statistics_image.url}}" alt="{{o.statistics_image.alt}}" class="stat_bg img-fluid my-4" />
+                    </div>
+
+                    <div class="col-12 statistics__outer">
+                        <div class="statistics__icons">
+                            <div class="row">
+                                {% for s in o.statistics_stats %}
+                                <div class="col-4 col-sm-4 d-inline-flex flex-column flex-sm-row justify-content-evenly">
+                                    <div class="statistics__icons--icon d-inline">
+                                        <img src="/assets/img/icon_s_{{loop.index}}.svg" alt="icon 1" />
+                                    </div>
+                                    <div class="statistics__icons--text">
+                                        <span class="digit d-block" d-before="{{s.digit|replace({' ': ''})}}" d-after="{{s.digit_after|replace({' ': ''})}}">{{s.digit}}</span>
+                                        <span>{{s.desc}}</span>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="consultation">
+    <div class="consultation__bg bg_1"></div>
+    <div class="consultation__bg bg_2"></div>
+    <div class="consultation__bg bg_3"></div>
+    <div class="consultation__bg bg_4"></div>
+    <div class="consultation__bg bg_5"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5 g-md-0">
+                <h2>
+                    {{o.consultation_h1}}
+                </h2>
+            </div>
+
+            <div class="col-12 col-lg-7">
+                <div class="row consultation__right position-relative">
+                    <div class="col-12 col-lg-10 g-md-0 offset-0 offset-lg-2">
+                        <p>{{o.consultation_desc}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="consultation-items row align-items-stretch">
+            {% for c in consultations %}
+            <div class="col-12 col-lg-6 accordion">
+                <div class="consultation-item">
+                    <div class="icon down"></div>
+                    <div class="row">
+                        <div class="col-12 col-md-10 col-lg-9 order-2 order-md-1">
+                            <div class="consultation-item__left">
+                                <h3>{{c.title}}</h3>
+                                <p>{{c.desc}}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-2 col-lg-3 d-flex align-items-center justify-content-md-end order-1 order-md-2">
+                            <img src="{{c.meta('icon').url}}" class="img-fluid" alt="{{c.icon.alt}}">
+                        </div>
+                        <div class="consultation-item__end col-12 order-3 order-md-3">
+                            <div class="consultation-item__button">
+                                <button class="btn no-border arrow ps-0">
+                                    <a href="{{c.button_link}}">{{c.button}}</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="banner_newsletter">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12 col-xl-9 position-relative">
+                <div class="banner_newsletter__box mx-auto">
+                    <h2>{{o.banner_newsletter_h1}}</h2>
+                    <p>{{o.banner_newsletter_desc}}</p>
+                    <input class="d-block w-100 mt-4" type="text" placeholder="{{o.banner_newsletter_input}}" />
+                    <button class="btn btn-red d-block mx-auto">{{o.banner_newsletter_button}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-12 col-lg-5">
+                <h2>
+                    {{o.our_partners_h1}}
+                </h2>
+
+                <p class="mt-5 d-none d-lg-block d-xl-block">
+                    {{o.our_partners_left_desc}}
+                </p>
+
+                <button class="btn btn-border-only d-none d-lg-block d-xl-block mt-5 mx-auto mx-lg-0">
+                    <a href="{{o.our_partners_button_link}}">{{o.our_partners_button}}</a>
+                </button>
+            </div>
+
+            <div class="col-12 col-lg-7">
+                <div class="row partners__right position-relative justify-content-end">
+                    <div class="g-lg-0 col-12 col-lg-10 offset-lg-2">
+                        <p class="first">{{o.our_partners_right_desc}}</p>
+                    </div>
+
+                    <p class="mt-3 mt-lg-5 d-lg-none d-xl-none">
+                        {{o.our_partners_left_desc}}
+                    </p>
+
+                    <div class="col-12 col-lg-10 g-lg-0 offset-lg-2">
+                        <div class="row justify-content-center">
+                            {% for p in o.our_partners_logotypes %}
+                            <div class="col-4 col-lg-3 my-auto text-center">
+                                <img src="{{p.logo.url}}" class="img-fluid" alt="{{p.logo.alt}}" />
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <button class="btn d-lg-none d-xl-none mt-5 mx-auto mx-lg-0">{{o.our_partners_button}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="opinions">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>
+                    {{o.our_opinions_h1}}
+                </h2>
+                <p class="d-block mx-auto text-center">{{o.our_opinions_desc}}</p>
+            </div>
+        </div>
+
+        <div class="opinions_items">
+            <div class="justify-content-evenly row">
+                {% for op in opinions %}
+                <div class="col-12 col-lg-5 mb-5">
+                    <div class="opinions_item">
+                        <div class="opinions_item__icon"></div>
+                        <div class="opinions_item__inner">
+                            <img src="{{op.meta('grafika').url}}" class="img-fluid" alt="{{op.grafika.alt}}">
+                            <p class="testimonial_text">{{op.opinia}}</p>
+                            <p class="opinions_item__creator text-end"><b>{{op.autor}}</b> | {{op.stanowisko}}</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="d-none row opinions_pagination justify-content-center">
+                <div class="col-12 col-lg-5">
+                    <div class="opinions_pagination__prev"></div>
+                    <ul class="d-flex justify-content-evenly">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="active"></li>
+                        <li></li>
+                    </ul>
+                    <div class="opinions_pagination__next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner_webinar">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12 col-xl-9">
+                <div class="banner_webinar__box mx-auto">
+                    <h2 class="text-start">
+                        {{o.banner_webinar_h1}}
+                    </h2>
+                    <p>{{o.banner_webinar_desc}}</p>
+                    <input class="d-block w-100 mt-4" type="text" placeholder="{{o.banner_webinar_input}}" />
+                    <button class="btn btn-red d-block mx-auto">{{o.banner_webinar_button}}</button>
+
+                    <!--
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" value="" id="111">
+                        <label class="form-check-label" for="111">
+                            test test test
+                        </label>
+                    </div>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home_blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5">
+                <h2>
+                    {{o.home_blog_h1}}
+                </h2>
+            </div>
+
+            <div class="col-12 col-lg-7">
+                <div class="row home_blog__right position-relative">
+                    <div class="col-lg-10 g-lg-0 offset-lg-2">
+                        <p>{{o.home_blog_desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home_blog-items row align-items-stretch">
+            {% for b in posts_home %}
+            <div class="col-12 col-lg-4">
+                <div class="home_blog-item">
+                    <div class="row flex-column h-100">
+                        <div class="col-12">
+                            <span class="home_blog-item__date">{{function('get_the_date', 'd.m.Y', b)}}</span>
+                            <h3><a href="{{b.path}}">{{b.post_title}}</a></h3>
+                            <p>{{ b.meta('short_desc') }}</p>
+                        </div>
+                        <div class="d-flex justify-content-end mt-auto">
+                            <div class="home_blog-item__avatar">
+                                <img src="{{ b.author.meta('profil_picture') }}" class="me-3" />
+                            </div>
+                            <div class="home_blog-item__person">
+                                <span class="d-block">{{b.author.name}}</span>
+                                <span>{{ b.author.meta('position') }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-small hover d-block mx-auto"><a href="{{o.home_blog_button_link}}">{{o.home_blog_button}}</a></button>
+        </div>
+    </div>
+</section>
+
+<section class="home_form">
+    <div class="container">
+       
+
+        <div class="row home_form__content">
+            
+            <div class="col-12 col-lg-6 order-1 order-md-0">
+                <h2>
+                    {{o.home_form_h1}}
+                </h2>
+                <h3 class="mt-5 mt-md-0">{{o.home_form_dane_kontaktowe}}</h3>
+                <p class="mt-2">{{o.adres}}</p>
+                <a href="{{o.home_form_wskazowki_link}}" class="with-arrow mt-3 home_form__tip d-block d-md-inline-block me-auto me-md-0">{{o.home_form_wskazowki}}</a>
+
+                <p class="home_form__krs">
+                    <span>KRS:</span> {{option.krs}}<br />
+                    <span>NIP:</span> {{option.nip}}<br />
+                    <span>E-mail:</span> {{option.email}}<br />
+                    <span>Tel.</span> {{option.phone}}
+                </p>
+
+                <h3 class="mt-5 mb-4">Sprawdź nasze social media</h3>
+
+                <div class="home_form__social mb-5 mb-lg-0">
+                    <span class="home_form__icon facebook">/{{option.facebook}}</span>
+                    <span class="home_form__icon twitter">/{{option.twitter}}</span>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 g-0 position-relative">
+                {% include "form.twig" %}
+                <div class="home_form__box--shadow"></div>
+                <div class="circle_1 d-none d-md-block"></div>
+                <div class="circle_2 d-none d-md-block"></div>
+                <div class="circle_3 d-block d-md-none"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{ function('get_footer', '') }}

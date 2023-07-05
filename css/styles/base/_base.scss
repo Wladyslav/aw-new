@@ -1,0 +1,23 @@
+* {
+  outline: 0;
+}
+body,
+html {
+    font-family: Catamaran;
+    color: #2b2727;
+    letter-spacing: 0;
+}
+
+@media (min-width: 2560px) {
+  html {
+    // font-size: 140%;
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 3840px) {
+  html {
+    // font-size: 160%;
+    font-size: 140%;
+  }
+}

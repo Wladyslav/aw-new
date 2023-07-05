@@ -1,0 +1,85 @@
+{{ function('get_header', '') }}
+
+    <main id="content">
+        <article class="blog-post">
+            <div class="article-head">
+                <div class="container">
+                    <div class="row">
+                    <h1 class="header-template single-post-header">
+                        {{post.post_title}}                        
+                    </h1>
+                    <div class="excerpt">{{site.short_desc}}</div>
+                    
+                    <div class="author-data">
+                        
+                                <span class="list-art-authorname">
+                                    {% if post.author.meta('active_account') == 1 %}
+                                    <span >{{author_name}}</span>
+                                    {% else %}
+                                    {{author_name}}
+                                    {% endif %}
+                                     |
+                                </span>
+                    <span class="list-art-date">{{function('get_the_date', 'd.m.Y')}}</span>
+                    
+                    {% if author_linkedin %}
+                    <a rel="nofollow" target="_blank" class="author-linkedin" href="{{author_linkedin}}"><img src="/img/linkedin-in_red.svg"></a>
+                    {% endif %}
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="article-content-wrapper">
+             {% if site.spis_tresci %}
+                <div class="is-about-wrapper">
+                    <div class="is-about">
+                    <div class="is-about-title">Z tego artykułu dowiesz się:</div>
+                    <ol class="is-about-list">
+                        {% for spis in site.spis_tresci %}
+                        <li class="is-about-item"><a href={{spis.odnosnik}}>{{spis.nazwa}}</a></li>
+                        {% endfor %}
+                    </ol>
+                </div>
+                </div>
+                {% endif %}
+                <div class="article-content">                            
+                               {{site.content}}                        
+                </div>
+                <div class="single-art-aside-wrapper">
+                    <div class="single-art-aside">
+                    <div class="author-data">
+                        <img class="art-author-img" src="{{author_picture}}">
+                        <div class="list-art-authorname">{{author_name}}</div>
+                        <div class="author-position">{{author_position}}
+                            {% if author_linkedin %}
+                        <a rel="nofollow" target="_blank" class="author-linkedin" href="{{author_linkedin}}"><img src="/img/linkedin-in_red.svg"></a>
+                        {% endif %}
+                        </div>
+                        
+                    </div>
+                    <div class="share-wrapper">
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ post.link|url_encode }}&title={{ post.title|url_encode }}" target="_blank"><img src="https://agencjatest.cfolks.pl/wp-content/uploads/2023/07/LinkedIn_icon.svg" alt=""></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ post.link|url_encode }}" target="_blank"><img src="https://agencjatest.cfolks.pl/wp-content/uploads/2023/07/facebook-seeklogo.com_.svg" alt=""></a>
+                    <a href="https://twitter.com/intent/tweet?text={{ post.title|url_encode }}&url={{ post.link|url_encode }}" target="_blank"><img src="https://agencjatest.cfolks.pl/wp-content/uploads/2023/07/cdnlogo.com_twitter-icon.svg" alt=""></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </article>
+        <section class='container'>
+            <h3 class="header-template front-news-header"><span class="f-w900 txt-underline txt-red txt-L">Aktualności</span></h3>
+            <div class="row recent-news-list">
+                {% for p in posts %}
+                <div class="col-lg-3 col-12">
+                    <a href={{p.path}}>
+                        <h3>{{p.post_title}}</h3>
+                        
+                    </a>
+                    <div class=art-summary>{{p.short_desc}}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+{{ function('get_footer', '') }}

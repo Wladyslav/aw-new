@@ -1,0 +1,157 @@
+.btn {
+  padding: 12px 32px;
+  font: 500 24px/36px Catamaran;
+  border-radius: 4px;
+  border: 1px solid #f63d37;
+  letter-spacing: .5px;
+  position: relative
+}
+
+.btn,
+.btn a {
+  color: #f63d37
+}
+
+.btn a:hover {
+  color: #f8f7f7
+}
+
+@media (max-width:767.98px) {
+  .btn {
+      text-align: center;
+      width: auto
+  }
+}
+
+.btn.btn-small {
+  font: 700 16px/24px Catamaran
+}
+
+.btn.no-border {
+  border: none
+}
+
+.btn.no-border:hover a {
+  color: #2b2727
+}
+.btn.btn-red,
+.btn.btn-red a {
+  color: #f8f7f7
+}
+.btn.btn-red {
+  border: 1px solid #f63d37;
+  background: #f63d37;
+  &:hover{
+    background: #ffffff;
+    color: #f63d37;
+  }
+  
+  
+}
+
+
+
+.btn.btn-border-only:hover {
+  background: #f63d37
+}
+
+.btn.btn-border-only:hover a {
+  color: #f8f7f7
+}
+
+.btn.text-red {
+  color: #f63d37
+}
+
+.btn.text-red:hover a {
+  color: #2b2727
+}
+
+.btn.hover {
+  color: #f8f7f7
+}
+
+.btn.hover:active,
+.btn.hover:focus,
+.btn.hover:hover {
+  background: #f63d37;
+  border: 1px solid #f63d37
+}
+
+.btn.hover:active a,
+.btn.hover:focus a,
+.btn.hover:hover a {
+  color: #f8f7f7
+}
+
+.btn.arrow,
+.btn.arrow:after {
+  transition: all .2s linear
+}
+
+.btn.arrow:after {
+  content: " ";
+  width: 10px;
+  height: 17px;
+  background-image: url(../img/button_arrow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.btn.arrow:hover:after {
+  background-image: url(../img/button_arrow_black.svg)
+}
+
+
+.with-arrow {
+  position: relative;
+  margin-right: 31px;
+  display: inline-block
+}
+
+.with-arrow:after {
+  content: " ";
+  width: 10px;
+  height: 17px;
+  background-image: url(../img/button_arrow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -31px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .3s linear
+}
+
+.with-arrow:hover:after {
+  right: -15px
+}
+
+
+
+button.slick-arrow {
+  position: absolute;
+  width: 6px;
+  bottom: -5px;
+  background: transparent;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  overflow: hidden
+}
+
+button.slick-arrow.slick-prev {
+  background-image: url(/assets/img/slick_arrow_left.svg);
+  left: -30px;
+  font-size: 0;
+  padding: 13px
+}
+
+button.slick-arrow.slick-next {
+  background-image: url(/assets/img/slick_arrow_right.svg);
+  right: -30px;
+  font-size: 0;
+  padding: 13px
+}

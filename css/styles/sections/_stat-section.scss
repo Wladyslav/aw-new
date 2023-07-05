@@ -1,0 +1,276 @@
+.statistics {
+    padding: 80px 0 70px;
+    background-color: #fffdfd;
+    background-image: url(../img/sukces_bg.svg);
+    background-position: top;
+    border-bottom: 1px solid #f63d37
+}
+
+.statistics h2 {
+    position: relative;
+    z-index: 5;
+    font: 600 48px/57.6px Catamaran;
+    color: #f63d37
+}
+
+.statistics h2:first-line {
+    color: #2b2727
+}
+
+@media (max-width:767.98px) {
+    .statistics h2 {
+        font: 700 36px/36px Catamaran
+    }
+}
+
+.statistics h2 span {
+    font: 700 135px/57.6px Catamaran;
+    opacity: .06;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    color: #f63d37
+}
+
+@media (max-width:767.98px) {
+    .statistics h2 span {
+        font: 700 96px/0 Catamaran
+    }
+}
+
+.statistics h2 p {
+    font: 300 16px/24px Catamaran
+}
+
+.statistics .statistics__switch {
+    font: 700 24px/24px Catamaran;
+    color: #949494
+}
+
+@media (max-width:1403.98px) {
+    .statistics .statistics__switch {
+        font: 700 18px/24px Catamaran
+    }
+}
+
+@media (max-width:767.98px) {
+    .statistics .statistics__switch {
+        position: relative;
+        width: 100%
+    }
+}
+
+.statistics .statistics__switch .active {
+    color: #2b2727
+}
+
+.statistics .statistics__switch .after,
+.statistics .statistics__switch .before {
+    max-width: 150px;
+    font: 400 24px/24px Catamaran
+}
+
+@media (max-width:991.98px) {
+
+    .statistics .statistics__switch .after,
+    .statistics .statistics__switch .before {
+        max-width: 100%;
+        font: 300 20px/30px Catamaran
+    }
+}
+
+@media (max-width:767.98px) {
+
+    .statistics .statistics__switch .after,
+    .statistics .statistics__switch .before {
+        margin: 5px 0
+    }
+}
+
+.statistics .statistics__switch .statistics__switch--area {
+    width: 70px;
+    height: 16px;
+    margin: 0 48px 0 32px
+}
+
+@media (max-width:991.98px) {
+    .statistics .statistics__switch .statistics__switch--area {
+        margin: 0 50px
+    }
+}
+
+@media (max-width:767.98px) {
+    .statistics .statistics__switch .statistics__switch--area {
+        position: absolute;
+        right: -70px;
+        top: 32px;
+        rotate: -90deg
+    }
+}
+
+.statistics .statistics__switch .statistics__switch--area input {
+    width: 100%;
+    position: relative;
+    opacity: 0
+}
+
+.statistics .statistics__switch .statistics__switch--area input+label {
+    position: absolute;
+    left: 0;
+    top: -50%;
+    width: 32px;
+    height: 32px;
+    background: #f63d37;
+    border-radius: 50%;
+    transition: all .3s linear
+}
+
+.statistics .statistics__switch .statistics__switch--area input:checked+label {
+    left: calc(100% - 32px)
+}
+
+.statistics .statistics__right p {
+    font: 300 24px/36px Catamaran
+}
+
+.statistics .statistics__right img.stat_bg {
+    margin-left: -10px
+}
+
+.statistics .statistics__right .statistics__outer {
+    position: absolute;
+    bottom: 0;
+    width: 745px;
+    right: 28px
+}
+
+@media (max-width:1403.98px) {
+    .statistics .statistics__right .statistics__outer {
+        width: 500px;
+        right: 21px
+    }
+}
+
+@media (max-width:991.98px) {
+    .statistics .statistics__right .statistics__outer {
+        width: 100%
+    }
+}
+
+.statistics .statistics__right .statistics__outer .statistics__icons {
+    background: #2b2727;
+    color: #f8f7f7;
+    padding: 21px 20px;
+    border-radius: 4px
+}
+
+@media (max-width:575.98px) {
+    .statistics .statistics__right .statistics__outer .statistics__icons {
+        margin-right: -40px;
+        margin-left: 20px;
+        padding: 5px 20px
+    }
+}
+
+@media (max-width:1403.98px) {
+    .statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--text {
+        padding-left: 10px
+    }
+}
+
+.statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--text span {
+    display: block
+}
+
+.statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--text span:first-of-type {
+    font: 600 48px/58px Catamaran
+}
+
+@media (max-width:1403.98px) {
+    .statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--text span:first-of-type {
+        font: 600 28px/38px Catamaran
+    }
+}
+
+@media (max-width:575.98px) {
+    .statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--text span:first-of-type {
+        font: 600 16px/24px Catamaran
+    }
+}
+
+.statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--text span:nth-of-type(2) {
+    font: 300 16px/24px Catamaran
+}
+
+@media (max-width:1403.98px) {
+    .statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--text span:nth-of-type(2) {
+        font: 300 16px/18px Catamaran
+    }
+}
+
+@media (max-width:575.98px) {
+    .statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--text span:nth-of-type(2) {
+        font: 300 12px/18px Catamaran
+    }
+}
+
+.statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--icon {
+    margin-top: 12px
+}
+
+@media (max-width:1403.98px) {
+    .statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--icon {
+        margin-top: 6px
+    }
+}
+
+.statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--icon img {
+    width: 32px;
+    height: auto
+}
+
+@media (max-width:1403.98px) {
+    .statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--icon img {
+        width: 24px
+    }
+}
+
+@media (max-width:575.98px) {
+    .statistics .statistics__right .statistics__outer .statistics__icons .statistics__icons--icon img {
+        margin-left: 8px;
+        margin-bottom: 10px
+    }
+}
+
+.statistics .statistics__right .statistics__outer .statistics__icons>.row div[class*=col-] {
+    position: relative
+}
+
+.statistics .statistics__right .statistics__outer .statistics__icons>.row div[class*=col-]:first-of-type::before,
+.statistics .statistics__right .statistics__outer .statistics__icons>.row div[class*=col-]:nth-of-type(2):before {
+    content: " ";
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 30px;
+    background: #f63d37
+}
+
+.multi-switch .switch-content {
+    background-color: #F63D3740;
+    height: 16px;
+    border-radius: 16px
+}
+
+.multi-switch .switch-content.active {
+    background-color: #F63D3740
+}
+
+.multi-switch .switch-content .switch-circle {
+    background: #f63d37;
+    width: 32px;
+    height: 32px;
+    top: -7px
+}

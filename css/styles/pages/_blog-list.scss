@@ -1,0 +1,134 @@
+.blog-page {
+    .container {
+        .blog-list-heading{
+            margin-bottom: 1rem;
+            @media(min-width:767px){
+                margin: 2rem 0;
+            }
+        }
+        .row {
+            .news-list {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+
+                .news-list-article {
+                    border-radius: 18px;
+                    background: #f9f9f9;
+                    box-shadow: 0px 29px 110px 0px rgba(246, 61, 55, 0.19);
+                    .article-short-wrapper {
+                        padding: 1rem;
+
+                        .news-list-name {
+                            @media (min-width: 767px) {
+                                min-height: 58px;
+                            }
+                        }
+
+                        .art-summary {
+                            p {
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        .list-art-footer{
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            color: #f63d37;
+                            font-weight: 600;
+                            padding-top: 10px;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0; 
+                                left: 0;
+                                width: 30%; 
+                                border-top: 2px solid #2B2727;
+                            }
+                            .art-author-img{
+                                width: 67px;
+                                height: 67px;
+                                margin-left: auto;
+                                border-radius: 50%;
+                                object-fit: cover;
+                                object-position: top;
+                            }
+                        }
+                    }
+                }
+
+                // Dla ekranów o szerokości 600px i więcej
+                @media (min-width: 767px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                // Dla ekranów o szerokości 900px i więcej
+                @media (min-width: 1405px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            .pagination-cnt {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+
+                .page-link {
+                    margin-right: 8px;
+
+                    &.active {
+                        color: #f63d37;
+                    }
+
+                    &.prev {
+                        display: flex;
+                        margin-right: 1rem;
+                        border-radius: 50%;
+                        border: 1px solid #f63d37;
+
+                        &::after {
+                            content: "";
+                            background-image: url("/wp-content/uploads/2023/06/frame-left.svg");
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            margin: 12px;
+                        }
+
+                        &.inactive {
+                            border: 1px solid #b3b1b1;
+                            &::after {
+                            background-image: url("/wp-content/uploads/2023/06/frame-left-inactive.svg");
+                            }
+                        }
+                    }
+
+                    &.next {
+                        display: flex;
+                        align-items: center;
+                        border-radius: 160px;
+                        border: 1px solid #f63d37;
+                        padding: 10px 18px;
+                        margin-left: 1rem;
+                        color: #f63d37;
+                        font-weight: 600;
+
+                        &::after {
+                            content: "";
+                            background-image: url("/wp-content/uploads/2023/06/Frame.svg");
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

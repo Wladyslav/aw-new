@@ -1,0 +1,41 @@
+{{ function('get_header', '') }}
+
+
+<main id="content">
+    <section class="home_banner">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1 class="off-loop">
+                        <div class="heading">Słownik</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="533" height="23" viewBox="0 0 533 23" fill="none">
+                            <path d="M3 7.56831C194 0.0682354 394 3.06824 527.778 7.56831C536.393 7.56831 510.615 9.32312 502 9.4572C384.431 11.2871 264.363 9.46644 147.028 14.2072C144.681 14.3021 142.166 14.0545 139.833 14.3461C137.567 14.6294 144.383 14.8087 146.667 14.8461C212.941 15.9326 279.232 16.6703 345.5 18.0684C362.066 18.4179 378.523 19.9936 395.083 20.3184" stroke="#F63D37" stroke-width="5" stroke-linecap="round" />
+                        </svg>
+                    </h1>
+                    <h4 class="hero-short-desc">SEO/SEM</h4>
+                    <h4>Poznaj tajemnicze zagadnienia z branży SEO i rozwiń skrzydła prawdziwego pozycjonera! Po zagłębieniu się w pojęcia seo znacznie łatwiej będzie Ci zrozumieć ideologię SEO - oraz łatwiej będzie Ci rozmawiać z pozycjonerem :)Słownik SEO to niezbędne narzędzie do zbudowania niezbędnej merytoryki, która jak wszędzie - jest bardzo cenna.</h4>
+                    
+                </div>
+                <div class="d-flex col-12 col-md-6">
+                    <img width="100%" src="https://agencjatest.cfolks.pl/wp-content/uploads/2023/07/slownik.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="dictionary-wrapper">
+		<div class="container">
+			<div class="tiles">
+				{% for letter, posts in grouped_posts %}
+					<div class=" tile">
+						<div class="corner">{{ letter }}</div>
+						<div class="tile-list">
+							{% for post in posts %}
+								<a href="{{ post.link }}">{{ post.title }}</a>
+							{% endfor %}
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section></main>{{ function('get_footer', '') }}

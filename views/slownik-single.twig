@@ -1,0 +1,27 @@
+{{ function('get_header', '') }}
+
+
+<main id="content">
+	<section class='slownik-wrapper'>
+		<div class="container">
+            <div class="page-breadcrumbs">{{ function('yoast_breadcrumb') }}</div>
+            
+
+			<div class="row">
+				<div class="col-12 col-lg-6 dictionary-content">
+					<h1>{{page.post_title}}</h1>
+					{{ page.content }}
+				</div>
+				<div class="col-12 col-lg-6">
+					{% if post.thumbnail %}
+						<img width="100%" src="{{post.thumbnail.src}}" alt="{{post.title}}"/>
+					{% endif %}
+				</div>
+
+
+			</div>
+			<a class='btn btn-red dictionary-btn' href=/slownik/>Powrót do słownika</a>
+	</div>
+</section>
+</main>
+{{ function('get_footer', '') }}

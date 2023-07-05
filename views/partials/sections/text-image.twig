@@ -1,0 +1,23 @@
+<section  class="text-image-wrapper {% if section.ti_border_bottom %}aw-border-bottom{% endif %}">
+    <div class="container">
+        {% if section.double_text_heading %}
+        
+        <h2>{{section.double_text_heading}}</h2>
+        {% endif %}
+        <div class="row">
+            {% for twi_item in section.text_with_img %}
+                
+            
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center {% if twi_item.double_image_left %}order-lg-1{% endif %}">
+               {{ twi_item.double_text}}
+            </div>
+
+            <div class="col-12 col-lg-6 {% if twi_item.ti_border_bottom %}mb-5{% endif %}">
+                
+                <img src="{{ twi_item.double_image.url}}"class="img-fluid my-md-auto" alt="" />
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% if condition %}{% endif %}

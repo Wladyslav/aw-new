@@ -1,0 +1,19 @@
+<section class="home_clients_banner">
+    <div class="container">
+        <div class="row">
+            {% if section.slider_heading %}
+            <h2>{{section.slider_heading}}</h2>
+            {% endif %}
+            
+            <div class="col-12">
+                <div class="d-flex justify-content-between home_clients_banner_element">
+                    {% for image in section.slider_images %}
+                    <div class="col">
+                        <img src="{{image.url}}" alt="{{image.alt}}" />
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,68 @@
+.partners {
+    padding: 328px 0 70px;
+    background-position: top;
+    border-bottom: 1px solid #f63d37
+}
+
+@media (max-width:767.98px) {
+    .partners {
+        padding: 430px 0 70px
+    }
+}
+
+.partners h2 {
+    position: relative;
+    z-index: 5;
+    font: 600 48px/75.6px Catamaran;
+    color: #2b2727
+}
+
+@media (max-width:767.98px) {
+    .partners h2 {
+        font: 600 36px/43px Catamaran
+    }
+}
+
+.partners h2 .color-red {
+    color: #f63d37
+}
+
+.partners h2 span {
+    font: 700 135px/57.6px Catamaran;
+    opacity: .06;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    color: #f63d37
+}
+
+@media (max-width:767.98px) {
+    .partners h2 span {
+        font: 700 96px/0 Catamaran
+    }
+}
+
+.partners h2 p {
+    font: 300 16px/24px Catamaran
+}
+
+.partners .partners__right p.first {
+    font: 300 24px/36px Catamaran;
+    letter-spacing: .6px
+}
+
+.partners .partners__right img {
+    margin: 12px 0;
+    filter: grayscale(1);
+    transition: all .2s linear
+}
+
+.partners .partners__right img:hover {
+    filter: grayscale(0)
+}
+
+@media (max-width:767.98px) {
+    .partners button {
+        max-width: 90%
+    }
+}

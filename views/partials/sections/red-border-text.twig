@@ -1,0 +1,25 @@
+<section class="rbt-wrapper">
+	<div class="container">
+		{% if section.rbt_heading %}
+			<h2 {% if section.rbt_heading_pos %}class="text-center" {% endif %}
+			>{{section.rbt_heading}}</h2>
+		{% endif %}
+		<div class="row justify-content-center rbt-row">
+
+
+			{% for rbt_item in section.rbt_wrap %}
+
+				<div class="rbt-item col-12 col-lg-5">
+					
+						<h3>{{rbt_item.rbt_title}}</h3>
+						<p>{{rbt_item.rbt_desc}}</p>
+					
+				</div>
+
+			{% endfor %}
+			{% if section.rbt_addesc %}
+				<div>{{section.rbt_addesc}}</div>
+			{% endif %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,84 @@
+{{ function('get_header', '') }}
+
+<main class="blog-page" id="content">
+	<section class="container">
+		<h1 class="blog-list-heading">Nowości z branży marketingu internetowego</h1>
+		<div class="row">
+			<div class="news-list">
+				{% for p in posts %}
+					<article class="news-list-article">
+						<div class="article-short-wrapper">
+							<a href={{p.path}}>
+								<h3 class="news-list-name">{{p.post_title}}</h3>
+							</a>
+							<div class="art-summary">{{ p.meta('short_desc') }}</div>
+							<div class="list-art-footer">
+								<span class="list-art-date">{{function('get_the_date', 'd.m.Y', p)}}</span>
+								<span class="list-art-authorname">| &nbsp;{{p.author.name}}</span>
+								{% set profile_picture_url = function('get_profile_picture_url', p.author.id, 'thumbnail') %}
+								{% if profile_picture_url %}
+									<img class="art-author-img" src="{{ profile_picture_url }}" alt="Profile picture"/>
+                                {% else %}
+									{% set avatar_url = function('get_avatar_url', p.author.id, {'size': 64}) %}
+									<img class="art-author-img" src="{{ avatar_url }}" alt="Author avatar"/>
+
+								{% endif %}
+							</div>
+						</div>
+					</article>
+
+				{% endfor %}
+			</div>
+
+			<nav aria-label="Page navigation" class="pagination-cnt">
+
+				{% if paged-1 >= 1 %}
+					<a class="page-link prev" href="/blog/page/{{paged-1}}" rel="next"></a>
+				{% else %}
+					<span class="page-link prev inactive"></span>
+				{% endif %}
+
+
+				{% if paged > 3 %}
+					<a class="page-link" href="/blog/">1</a>
+					{% if paged > 4 %}
+						<span class="page-link dots">...</span>
+					{% endif %}
+				{% endif %}
+
+
+				{% for i in range(max(paged-2, 1), paged) %}
+					{% if i <= max_pages and i != paged %}
+						<a class="page-link" href="/blog/page/{{i}}/">{{i}}</a>
+					{% endif %}
+				{% endfor %}
+
+
+				<span class="page-link active">{{paged}}</span>
+
+
+				{% for i in range(paged+1, min(paged+3, max_pages+1)) %}
+					{% if i <= max_pages and i != paged %}
+						<a class="page-link" href="/blog/page/{{i}}/">{{i}}</a>
+					{% endif %}
+				{% endfor %}
+
+
+				{% if paged < max_pages-2 %}
+					{% if paged < max_pages-3 %}
+						<span class="page-link dots">...</span>
+					{% endif %}
+					<a class="page-link" href="/blog/page/{{max_pages}}/">{{max_pages}}</a>
+				{% endif %}
+
+
+				{% if max_pages >= paged+1 %}
+					<a class="page-link next" href="/blog/page/{{paged+1}}/" rel="next">Następna</a>
+				{% endif %}
+			</nav>
+
+
+		</div>
+	</section>
+</main>
+{{ function('get_footer', '') }}

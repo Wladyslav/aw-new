@@ -1,0 +1,29 @@
+<section class="text-columns-wrapper {% if section.tc_border_bottom %}aw-border-bottom{% endif %}">
+	<div class="container">
+		<div class="row">
+            {% if section.text_column_heading %}
+            <h2 class="text-columns-heading">{{section.text_column_heading}}</h2>
+
+            {% endif %}
+            {% if section.tc_additional_desc %}
+            <div class="additional-col-desc">{{section.tc_additional_desc}}</div>	
+            {% endif %}
+
+			{% for colTextItem in section.col_text %}
+				<div class="col-12 col-lg-{{section.text_col_number}}">
+					
+					<div class="ct-heading">{{colTextItem.heading}}</div>
+					<p>{{colTextItem.desc}}</p>
+				</div>
+
+			{% endfor %}
+            {% if section.tc_additional_desc_bottom %}
+            <div class="additional-col-desc">{{section.tc_additional_desc_bottom}}</div>	
+            {% endif %}
+		</div>
+
+
+	</div>
+
+
+</section>

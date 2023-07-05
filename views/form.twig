@@ -1,0 +1,54 @@
+<form id="{{option.form_popup.form_id}}" action="{{option.form_popup.endpoint}}" method="post">
+   <div class="home_form__box">
+    <div class="row">
+        <div class="col-12">
+            <h3>Określ temat pytania</h3>
+        </div>
+        {% for p in option.form_popup.pola %}
+            {% if p.type == 'email' or p.type == 'text' or p.type == 'phone' or p.type == 'url' %}
+            <div class="input-group mb-4">
+                <label for="{{p.id}}">{{p.opis}}</label>
+                <input {% if p.required %}required{% endif %} name="{{p.id}}" type="{{p.type}}" id="{{p.id}}" class="form-control w-100" placeholder="{{p.placeholder}}">
+            </div>
+            {% endif %}
+            
+            {% if p.type == 'textarea' %}        
+            <div class="input-group mb-4">
+                <label for="{{p.id}}">{{p.opis}}</label>
+                <textarea class="form-control w-100" name="{{p.id}}" id="{{p.id}}" placeholder="{{p.opis}}"></textarea>
+            </div>
+            {% endif %}
+            
+            {% if p.type == 'checkbox' %}
+            <div class="col-12 col-lg-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="{{p.id}}">
+                    <label class="form-check-label" for="{{p.id}}">
+                        {{p.opis}}
+                    </label>
+                </div>
+            </div>
+            {% endif %}
+            
+            {% if p.type == 'submit' %}
+            <div class="col-12 col-lg-6 col-xl-4">
+                <input class="form-control" type="submit" value="{{p.opis}}" id="{{p.id}}" />
+            </div>
+            {% endif %}
+            
+            {% if p.type == 'accept' %}
+            <div class="col-12">
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" value="" id="{{p.id}}">
+                    <label class="form-check-label" for="{{p.id}}">
+                        {{p.accept_text}}
+                    </label>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}   
+        
+    </div>
+
+</div>
+</form>

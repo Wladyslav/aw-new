@@ -1,0 +1,127 @@
+.blog-post {
+
+    .article-head {
+        height: 50vh;
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-color: #f63d37;
+        color: #ffffff;
+
+        .container{
+            z-index: 1;
+            .row{
+                .single-post-header{
+                    @media(min-width: 767px){
+                        font-size: 3rem;
+                        line-height: 4rem;
+                    }
+                }
+                .excerpt{
+                    margin: 2rem 0;
+                    p{
+                        @media(min-width:767px){
+                            font-size: 1.5rem;
+                            line-height: 2rem;
+                        }
+                    }
+                }
+                .author-data{
+                    .art-author-img{
+                        height: 67px;
+                        width: 67px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .article-content-wrapper{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media(min-width:1200px){
+            padding: 57px 16px;
+        }
+        .is-about-wrapper{
+        .is-about{
+            @media(min-width:1200px){
+                position: sticky;
+                top:32px;
+                width: 240px;
+                border-right: 1px solid #e7e7e7;
+                
+            }
+            .is-about-item{
+                @media(min-width:1200px){
+                    padding: 6px 8px 6px 0 ;
+                }
+            }
+            
+        }
+    }
+        .article-content{
+            @media(min-width:1200px){
+                max-width: calc(100vw - 650px);
+                padding: 0 2rem;
+            }  
+            p{
+                img{
+                    width: 100%;
+                }
+            }           
+        }
+        .single-art-aside-wrapper{
+            
+            .single-art-aside{
+            @media(min-width:1200px){
+                position: sticky;
+                top:32px;
+                width: 240px;
+                
+            }
+            .author-data{
+                .art-author-img{
+                    width: 112px;
+                    height: 112px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-bottom: 1rem;
+                }
+                .list-art-authorname{
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: 1.25rem;
+                }
+                .author-position{
+                    display: flex;
+                    align-items: center;
+                    .author-linkedin{
+                        border-left: 1px solid #f63d37;
+                        padding-left: 2rem;
+                        margin-left: 2rem;
+                    }
+                }
+            }
+            .share-wrapper{
+                a{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    
+                }
+            }
+        }
+        }
+    }
+
+}
+
+// .is-about-item.active {
+//     background-color: #f0f0f0; /* przykładowy kolor tła */
+// }
+
+

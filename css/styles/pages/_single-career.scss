@@ -1,0 +1,45 @@
+.career-wrapper {
+    .career-content-wrapper {
+        margin:  3rem 0;
+        .career-header-template {
+            font-size: 3rem;
+        }
+
+        .career-content {
+            
+            h3 {
+                color: #F63D37 !important;
+            }
+
+            .career-cta-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 2rem;
+
+                .career-cta-text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p:first-child {
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                        line-height: 2.5rem;
+                    }
+
+                    p:nth-last-child(1) {
+                        font-size: 1.25rem;
+                        font-weight: 400;
+                    }
+                }
+
+                .career-cta-img {
+                    img {
+                        border-radius: 18px;
+                    }
+                }
+
+            }
+        }
+    }
+}

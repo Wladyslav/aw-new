@@ -1,0 +1,47 @@
+.employees-wrapper {
+    .employees-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 3rem;
+        position: relative;
+
+        .single-employee {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            @media(min-width:1200px) {
+                // width: 16%;
+            }
+
+            .team-item-img {
+                
+                object-fit: cover;
+                width: 292px;
+                height: 292px;
+                object-position: top;
+                position: relative;
+
+                
+
+            }
+
+            .person-name-kontakt {
+                font-weight: 600;
+                margin-top: 1rem;
+
+                @media(min-width:768px) {
+                    font-size: 2rem;
+                }
+            }
+
+            .person-job-kontakt {
+                @media(min-width:768px) {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}

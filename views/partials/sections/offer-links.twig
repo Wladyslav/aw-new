@@ -1,0 +1,20 @@
+<section class="offer-links-wrapper">
+    <div class="container">
+        <div class="row">
+            {% for offer in section.job_offers %}
+            <div class="col-12 single-job-offer">
+                <a href="{{offer.offer_link}}">
+                <div class="job-offer-name">
+                    {{ offer.position}}
+                </div>
+                <div class="job-offer-city">Wrocław</div>
+                <img src="/wp-content/uploads/2023/06/arrow-right.svg" alt="">
+            </a>
+            </div>
+            {% endfor %}
+            
+
+        </div>
+
+    </div>
+</section>

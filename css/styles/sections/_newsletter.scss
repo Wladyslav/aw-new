@@ -1,0 +1,124 @@
+section.home_tabs .home_tabs__newsletter {
+    padding: 24px 64px;
+    background: #2b2727;
+    border-radius: 4px;
+    margin-top: 66px
+}
+
+@media (max-width:767.98px) {
+    section.home_tabs .home_tabs__newsletter {
+        padding: 24px 15px
+    }
+}
+
+section.home_tabs .home_tabs__newsletter h3 {
+    font: 600 32px/38.4px Catamaran;
+    color: #fafbfc;
+    max-width: 813px
+}
+
+@media (max-width:767.98px) {
+    section.home_tabs .home_tabs__newsletter h3 {
+        font: 600 24px/28px Catamaran
+    }
+}
+
+section.home_tabs .home_tabs__newsletter input {
+    font: 300 16px/24px Catamaran;
+    color: #949494;
+    padding: 12px 18px;
+    width: 450px;
+    border-radius: 4px
+}
+
+@media (max-width:991.98px) {
+    section.home_tabs .home_tabs__newsletter input {
+        width: 100%
+    }
+}
+
+section.home_tabs .home_tabs__newsletter .btn {
+    font: 700 16px/24px Catamaran
+}
+
+@media (max-width:991.98px) {
+    section.home_tabs .home_tabs__newsletter .btn {
+        width: 100%;
+        margin-left: 0 !important
+    }
+}
+
+.banner_newsletter {
+    background-image: url(../img/banner_3.jpg);
+    background-size: cover;
+    height: 600px;
+    border-bottom: 24px solid #f63d37
+}
+
+@media (max-width:767.98px) {
+    .banner_newsletter {
+        background-size: cover;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        height: 261px
+    }
+}
+
+.banner_newsletter .banner_newsletter__box {
+    padding: 48px 60px;
+    margin-top: 350px;
+    background: #2B2727EE;
+    max-width: 928px;
+    border-radius: 4px;
+    color: #f8f7f7;
+    position: relative;
+    z-index: 5
+}
+
+@media (max-width:767.98px) {
+    .banner_newsletter .banner_newsletter__box {
+        padding: 23px 12px;
+        margin-top: 0;
+        max-width: 928px;
+        border-radius: 4px;
+        color: #f8f7f7;
+        position: absolute;
+        z-index: 4;
+        top: 120px;
+        margin-right: 12px !important;
+        margin-left: 0 !important
+    }
+}
+
+.banner_newsletter .banner_newsletter__box h2 {
+    font: 600 48px/48px Catamaran
+}
+
+.banner_newsletter .banner_newsletter__box p {
+    font: 300 16px/24px Catamaran
+}
+
+.banner_newsletter .banner_newsletter__box input {
+    font: 300 16px/24px Catamaran;
+    color: #949494;
+    padding: 12px 18px;
+    border-radius: 4px;
+    border: 1px solid #949494
+}
+
+@media (max-width:991.98px) {
+    .banner_newsletter .banner_newsletter__box input {
+        width: 100%
+    }
+}
+
+.banner_newsletter .banner_newsletter__box button {
+    margin-top: 32px
+}
+
+@media (max-width:991.98px) {
+    .banner_newsletter .banner_newsletter__box button {
+        width: 100%;
+        margin-top: 16px
+    }
+}

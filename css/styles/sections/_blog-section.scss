@@ -1,0 +1,122 @@
+.home_blog {
+    padding: 291px 0 83px;
+    background-color: #fffdfd;
+    position: relative
+}
+
+@media (max-width:767.98px) {
+    .home_blog {
+        padding: 83px 0;
+        background-color: transparent
+    }
+}
+
+.home_blog .btn {
+    margin-top: 16px
+}
+
+.home_blog ul.slick-dots {
+    margin-bottom: 50px
+}
+
+@media (min-width:768px) {
+    .home_blog ul.slick-dots {
+        display: none
+    }
+}
+
+.home_blog h2 {
+    position: relative;
+    z-index: 5;
+    font: 600 48px/57.6px Catamaran;
+    color: #2b2727
+}
+
+@media (max-width:767.98px) {
+    .home_blog h2 {
+        font: 600 36px/43px Catamaran
+    }
+}
+
+.home_blog h2 .color-red {
+    color: #f63d37
+}
+
+.home_blog h2 span {
+    font: 700 135px/57.6px Catamaran;
+    opacity: .06;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    color: #f63d37
+}
+
+@media (max-width:767.98px) {
+    .home_blog h2 span {
+        font: 700 96px/0 Catamaran
+    }
+}
+
+.home_blog h2 p {
+    font: 300 16px/24px Catamaran
+}
+
+.home_blog .home_blog__right p {
+    font: 300 24px/36px Catamaran
+}
+
+.home_blog .home_blog-items {
+    margin-top: 90px
+}
+
+.home_blog .home_blog-items>div {
+    margin-bottom: 48px
+}
+
+.home_blog .home_blog-items .home_blog-item {
+    height: 100%;
+    padding: 32px;
+    border: 1px solid #f63d37;
+    border-radius: 4px
+}
+
+.home_blog .home_blog-items .home_blog-item h3 {
+    font: 600 32px/38.4px Catamaran
+}
+
+.home_blog .home_blog-items .home_blog-item p {
+    margin: 24px 0 0;
+    font: 300 16px/24px Catamaran
+}
+
+.home_blog .home_blog-items .home_blog-item .home_blog-item__date {
+    font: 300 24px/36px Catamaran;
+    color: #f63d37
+}
+
+.home_blog .home_blog-items .home_blog-item .home_blog-item__avatar {
+    margin-top: 24px;
+    margin-right: 15px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+}
+
+.home_blog .home_blog-items .home_blog-item .home_blog-item__avatar img {
+    width: 50px;
+    height: auto;
+    border-radius: 0
+}
+
+.home_blog .home_blog-items .home_blog-item .home_blog-item__person {
+    margin-top: 24px
+}
+
+.home_blog .home_blog-items .home_blog-item .home_blog-item__person span:first-child {
+    font: 700 16px/24px Catamaran
+}
+
+.home_blog .home_blog-items .home_blog-item .home_blog-item__person span:nth-child(2) {
+    font: 300 13px/18px Catamaran
+}

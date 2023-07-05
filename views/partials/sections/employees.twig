@@ -1,0 +1,20 @@
+<main id="content">
+	<section class="container employees-wrapper">
+		<h2>{{section.employees_heading}}</h2>
+		<div class="employees-content">
+			{% for e in employees %}
+				{% if e.display == true %}
+					{% if e.display_kontakt == true or e.display_kontakt == '' %}
+						<div class="single-employee">
+							<img class="team-item-img" src="{{ function('wp_get_attachment_image_url', e.obraz, 'medium') }}">
+							<div class="person-name-kontakt">{{e.imie}}</div>
+							<div class="person-job-kontakt">{{e.stanowisko}}</div>
+						</div>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+
+		</div>
+	</section>
+
+</main>

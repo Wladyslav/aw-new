@@ -1,0 +1,140 @@
+.banner_webinar {
+    background-image: url(../img/webinar_bg.jpg);
+    background-size: cover;
+    min-height: 600px
+}
+
+@media (max-width:767.98px) {
+    .banner_webinar {
+        background-image: none;
+        margin-top: 0;
+        min-height: auto
+    }
+}
+
+.banner_webinar .banner_webinar__box {
+    padding: 48px 60px;
+    top: 400px;
+    background: #2B2727EE;
+    max-width: 928px;
+    border-radius: 4px;
+    color: #f8f7f7;
+    position: relative;
+    z-index: 5
+}
+
+@media (max-width:767.98px) {
+    .banner_webinar .banner_webinar__box {
+        margin-top: 48px;
+        background: transparent;
+        padding: 0;
+        top: 0
+    }
+}
+
+.banner_webinar .banner_webinar__box h2 {
+    font: 600 48px/48px Catamaran
+}
+
+@media (max-width:767.98px) {
+    .banner_webinar .banner_webinar__box h2 {
+        position: relative;
+        z-index: 5;
+        font: 600 36px/43px Catamaran;
+        color: #f63d37;
+        text-align: center;
+        margin-top: 56px
+    }
+}
+
+.banner_webinar .banner_webinar__box h2 span {
+    font: 900 135px/64px Catamaran;
+    opacity: .06;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    color: #f63d37
+}
+
+@media (max-width:767.98px) {
+    .banner_webinar .banner_webinar__box h2 span {
+        font: 900 96px/15px Catamaran
+    }
+}
+
+.banner_webinar .banner_webinar__box p {
+    font: 300 16px/24px Catamaran;
+    color: #f8f7f7
+}
+
+@media (max-width:767.98px) {
+    .banner_webinar .banner_webinar__box p {
+        color: #2b2727
+    }
+}
+
+.banner_webinar .banner_webinar__box input {
+    font: 300 16px/24px Catamaran;
+    color: #949494;
+    padding: 12px 18px;
+    border-radius: 4px;
+    border: 1px solid #949494
+}
+
+.banner_webinar .banner_webinar__box button {
+    margin-top: 32px
+}
+
+@media (max-width:767.98px) {
+    .banner_webinar .banner_webinar__box button {
+        width: 100%
+    }
+}
+
+.banner_webinar .banner_webinar__box .input-group label {
+    display: block
+}
+
+.banner_webinar .banner_webinar__box .form-check {
+    margin-bottom: 20px
+}
+
+.banner_webinar .banner_webinar__box .form-check input.form-check-input {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #949494;
+    border-radius: 2px
+}
+
+.banner_webinar .banner_webinar__box .form-check input.form-check-input:checked {
+    background-color: #f63d37;
+    border-color: #f63d37
+}
+
+.banner_webinar .banner_webinar__box .form-check label.form-check-label {
+    font: 300 12px/18px Catamaran;
+    padding-left: 14px
+}
+
+.banner_webinar .banner_webinar__box .input-group label {
+    font: 700 12px/14.4px Catamaran;
+    margin-bottom: 6px
+}
+
+.banner_webinar .banner_webinar__box .input-group input,
+.banner_webinar .banner_webinar__box .input-group textarea {
+    font: 300 16px/24px Catamaran;
+    color: #949494;
+    border: 1px solid #949494;
+    border-radius: 4px !important;
+    padding: 12px 18px
+}
+
+.banner_webinar .banner_webinar__box .form-control[type=submit] {
+    border: 1px solid #f63d37;
+    background: #f63d37;
+    color: #f8f7f7;
+    padding: 12px 32px;
+    font: 700 16px/24px Catamaran
+}

@@ -1,0 +1,59 @@
+h2 {
+  font-size: 2rem ;
+  text-align: left;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1rem ;
+  text-align: left;
+  font-weight: 600;
+}
+section{
+  margin-bottom: 2rem;
+}
+a {
+  color: #2b2727;
+  text-decoration: none
+}
+
+a:hover {
+  color: #f63d37
+}
+
+p {
+  font: 300 16px/24px Catamaran;
+}
+
+b {
+  font-weight: 700
+}
+
+.aw-border-bottom {
+  border-bottom: 0.25px solid #f63d37;
+}
+
+input {
+  box-shadow: none !important
+}
+
+@media(min-width:768px) {
+  h2 {
+    font-size: 3rem ;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem ;
+    
+  }
+  section{
+    margin-bottom: 4rem;
+  }
+
+}
+
+.page-breadcrumbs{
+  margin-bottom: 1.25rem;
+  @media(min-width: 768px){
+    margin: 1rem 0 2rem 0;
+  }
+}

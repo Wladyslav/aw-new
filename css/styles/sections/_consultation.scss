@@ -1,0 +1,226 @@
+.consultation {
+    padding: 166px 0 128px;
+    background-color: #fffdfd;
+    position: relative
+}
+
+@media (max-width:767.98px) {
+    .consultation {
+        padding: 56px 0 128px
+    }
+}
+
+.consultation .consultation__bg {
+    background-repeat: no-repeat;
+    position: absolute
+}
+
+.consultation .consultation__bg.bg_1 {
+    background-image: url(../img/03_circle_left.svg);
+    width: 158px;
+    height: 158px;
+    top: 648px;
+    left: 0
+}
+
+.consultation .consultation__bg.bg_2 {
+    background-image: url(../img/03_circle2_left.svg);
+    width: 200px;
+    height: 440px;
+    top: 274px;
+    left: 0
+}
+
+@media (max-width:767.98px) {
+    .consultation .consultation__bg.bg_2 {
+        width: 200px;
+        height: 440px;
+        top: unset;
+        bottom: -140px;
+        left: 0
+    }
+}
+
+.consultation .consultation__bg.bg_3 {
+    width: 39px;
+    height: 39px;
+    top: 928px;
+    right: 44px;
+    background: #f63d37;
+    border-radius: 50%
+}
+
+@media (max-width:767.98px) {
+    .consultation .consultation__bg.bg_3 {
+        top: 15px;
+        right: 21px;
+        width: 17px;
+        height: 17px
+    }
+}
+
+.consultation .consultation__bg.bg_4 {
+    width: 94px;
+    height: 94px;
+    top: 1019px;
+    right: 83px;
+    background: #f63d37;
+    border-radius: 50%
+}
+
+@media (max-width:767.98px) {
+    .consultation .consultation__bg.bg_4 {
+        top: 55px;
+        right: 38px;
+        width: 41px;
+        height: 41px
+    }
+}
+
+.consultation .consultation__bg.bg_5 {
+    height: 848px;
+    width: 424px;
+    border-bottom-left-radius: 848px;
+    border-top-left-radius: 848px;
+    top: 1117px;
+    right: 0;
+    background: #fff6f6;
+    display: none
+}
+
+.consultation h2 {
+    position: relative;
+    z-index: 5;
+    font: 600 48px/57.6px Catamaran;
+    color: #2b2727
+}
+
+.consultation h2 .color-red {
+    color: #f63d37
+}
+
+@media (max-width:767.98px) {
+    .consultation h2 {
+        font: 700 30px/36px Catamaran
+    }
+}
+
+.consultation h2 span {
+    font: 700 135px/57.6px Catamaran;
+    opacity: .06;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    color: #f63d37
+}
+
+@media (max-width:767.98px) {
+    .consultation h2 span {
+        font: 700 96px/0 Catamaran
+    }
+}
+
+.consultation h2 p {
+    font: 300 16px/24px Catamaran
+}
+
+.consultation .consultation__right p {
+    font: 300 24px/36px Catamaran
+}
+
+.consultation .consultation-items {
+    margin-top: 90px;
+    justify-content:space-between;
+}
+
+.consultation .consultation-items>div {
+    margin-bottom: 32px
+}
+
+.consultation-items .consultation-item {
+    height: 100%;
+    padding: 32px;
+    border: 1px solid #f63d37;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    transition: all .2s linear
+}
+
+.consultation .consultation-items .consultation-item.hide .consultation-item__end,
+.consultation .consultation-items .consultation-item.hide .consultation-item__left p {
+    display: none
+}
+
+.consultation .consultation-items .consultation-item .icon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer
+}
+
+.consultation .consultation-items .consultation-item .icon.down {
+    background-image: url(/assets/img/arrow_down_ic.png)
+}
+
+.consultation .consultation-items .consultation-item .icon.up {
+    background-image: url(/assets/img/arrow_up_ic.png)
+}
+
+@media (min-width:768px) {
+    .consultation .consultation-items .consultation-item .icon {
+        display: none
+    }
+}
+
+.consultation .consultation-items .consultation-item .consultation-item__left {
+    max-width: 441px;
+    position: relative
+}
+
+@media (max-width:991.98px) {
+    .consultation .consultation-items .consultation-item .consultation-item__left {
+        max-width: 93%
+    }
+}
+
+.consultation .consultation-items .consultation-item .consultation-item__left h3 {
+    font: 600 32px/38.4px Catamaran
+}
+
+.consultation .consultation-items .consultation-item .consultation-item__left p {
+    margin: 24px 0;
+    font: 300 16px/24px Catamaran
+}
+
+.consultation .consultation-items .consultation-item .consultation-item__button {
+    border-top: 1px solid #f63d37;
+    padding-top: 12px
+}
+
+@media (max-width:767.98px) {
+    .consultation .consultation-items .consultation-item .consultation-item__button {
+        margin-top: 48px
+    }
+}
+
+@media (max-width:767.98px) {
+    .consultation .consultation-items .consultation-item .consultation-item__button .btn {
+        font: 700 20px/30px Catamaran;
+        width: auto;
+        text-align: left;
+        padding-right: 30px
+    }
+}
+
+@media (max-width:767.98px) {
+    .consultation .consultation-items .consultation-item img {
+        margin-bottom: 45px;
+        display: none
+    }
+}

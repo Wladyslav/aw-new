@@ -1,0 +1,19 @@
+<section class="accordion container" id="faqAccordion">
+    <h3>Najczęściej zadawane pytania</h3>
+    <div class="schema-faq-code" itemscope="" itemtype="https://schema.org/FAQPage">
+    {% for faqItem in section.faq_list %}
+    <div class="accordion-item row faq-question" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 itemprop="name" class="accordion-header faq-q" id="heading{{ loop.index }}">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}" aria-expanded="{{ loop.first ? 'true' : 'false' }}" aria-controls="collapse{{ loop.index }}">
+            {{ faqItem.question }}
+          </button>
+        </h3>
+        <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse{{ loop.index }}" class="accordion-collapse collapse {{ loop.first ? 'show' : '' }}" aria-labelledby="heading{{ loop.index }}" data-bs-parent="#faqAccordion">
+          <div itemprop="text" class="accordion-body faq-a">
+            {{ faqItem.answer }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

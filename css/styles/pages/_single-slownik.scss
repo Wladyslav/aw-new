@@ -1,0 +1,19 @@
+.slownik-wrapper{
+    .container{
+        .row{
+            .dictionary-content{
+                h1{
+                    color: #F63D37;
+                }
+            }
+        }
+        .dictionary-btn{
+            margin-top: 1rem;
+            
+            @media(min-width:768px){
+                margin-top: 2rem;
+            }
+        }
+
+    }
+}

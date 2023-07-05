@@ -1,0 +1,40 @@
+<section class="text-number-wrapper {% if section.tn_border_bottom %}aw-border-bottom{% endif %}">
+
+
+	<div class="container {% if section.text_number_shadow %}tn-border{% endif %}">
+		<div class="row">
+			{% if section.text_number_heading %}
+			<h2 class="text-number-heading">{{section.text_number_heading}}</h2>
+
+			{% endif %}
+
+
+			{% if section.tn_top_desc %}
+			<div class="additional-numb-desc">{{section.tn_top_desc}}</div>
+			{% endif %}
+
+			{% for textnumberitem in section.text_number %}
+			<div class="col-12 col-lg-{{section.text_number_numb}}">
+				<span class="tn-number">{{textnumberitem.number}}</span>
+				{% if textnumberitem.header %}
+				<div class="tn-heading">{{textnumberitem.header}}</div>
+				{% endif %}
+				{% if textnumberitem.text %}
+				<p>{{textnumberitem.text}}</p>
+				{% endif %}
+
+
+			</div>
+
+			{% endfor %}
+			{% if section.tn_additional_desc %}
+			<div class="additional-numb-desc">{{section.tn_additional_desc}}</div>
+			{% endif %}
+
+		</div>
+
+
+	</div>
+
+
+</section>

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import "styles/abstract/variables";
+@import "styles/base/fonts", "styles/base/base", "styles/base/global";
+@import "styles/components/buttons";
+@import "styles/pages/home-page", "styles/pages/blog-list", "styles/pages/single-blog", "styles/pages/archive-slownik", "styles/pages/single-slownik", "styles/pages/single-career";
+@import "styles/layout/header", "styles/layout/footer";
+@import "styles/sections/hero-section", "styles/sections/tabs-section", "styles/sections/slider-section", "styles/sections/stat-section", "styles/sections/red-border-text", "styles/sections/newsletter", "styles/sections/testemonials", "styles/sections/webinar-section", "styles/sections/blog-section", "styles/sections/contact-form", "styles/sections/partners-section", "styles/sections/text-number-section", "styles/sections/text-columns", "styles/sections/wysiwyg-section", "styles/sections/text-image", "styles/sections/faq-section", "styles/sections/check-mark-section", "styles/sections/contact-form-btn", "styles/sections/consultation", "styles/sections/new-articles", "styles/sections/job-offer", "styles/sections/offer_packages", "styles/sections/tiles-with-img", "styles/sections/employees";
+@import "styles/popups/service-popup";
+
+.grid_debug {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 6
+}
+
+.grid_debug,
+.grid_debug div[class*=col-] {
+  height: 100vh
+}
+
+.grid_debug div[class*=col-]:after {
+  content: " ";
+  background: #ff000010;
+  height: 100%;
+  display: block
+}
+
+.grid_debug__control {
+  position: fixed;
+  z-index: 7;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  background: #2b2727;
+  color: #fff
+}
+
+.grid_debug__control .breakpoint span:after {
+  content: " "
+}
+
+@media (min-width:576px) {
+  .grid_debug__control .breakpoint span:after {
+      content: "sm"
+  }
+}
+
+@media (min-width:768px) {
+  .grid_debug__control .breakpoint span:after {
+      content: "md"
+  }
+}
+
+@media (min-width:992px) {
+  .grid_debug__control .breakpoint span:after {
+      content: "lg"
+  }
+}
+
+@media (min-width:1404px) {
+  .grid_debug__control .breakpoint span:after {
+      content: "xl"
+  }
+}
+
+.img_bg img {
+  position: relative;
+  z-index: 2;
+  border-radius: 4px
+}
+
+.img_bg .image__circle {
+  width: calc(100% + 115px);
+  height: calc(100% + 100px);
+  background-image: url(../img/image_circle.svg);
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: -45px;
+  z-index: 1;
+  left: -40px
+}
+

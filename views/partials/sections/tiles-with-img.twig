@@ -1,0 +1,16 @@
+<section class="twi-wrapper">
+	<div class="container">
+		<h2>
+			{{section.twi_heading}}</h2>
+		<div class="tiles">
+			{% for tile in section.single_tile %}
+				<div class="tile">
+
+					<img src="{{tile.image}}" alt="">
+					<a href="{{tile.link}}">{{tile.name}}</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+</section>

@@ -1,0 +1,24 @@
+.rbt-wrapper {
+    .rbt-row {
+        gap:2rem;
+        margin: 16px 0;
+        .rbt-item {
+            padding: 2rem;
+            border: 1px solid #F63D37;
+            border-radius: 9px;
+
+            h3 {
+                color: #F63D37;
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .rbt-wrapper {
+        .rbt-row {
+            margin: 0;
+        }
+
+    }
+}

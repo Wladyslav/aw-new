@@ -1,0 +1,10 @@
+{{ function('get_header', '') }}
+
+
+{# custom-sections-aw.twig #}
+{% for section in post.meta('section') %}
+  {% include ['partials/sections/' ~ section.acf_fc_layout|replace({'_': '-'}) ~ '.twig'] with {'section': section} %}
+{% endfor %}
+
+
+{{ function('get_footer', '') }}

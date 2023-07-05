@@ -1,0 +1,129 @@
+
+section.home_banner {
+    padding: 72px 0;
+    border-bottom: 1px solid #949494;
+    background-image: url(../img/header_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .hero-short-desc{
+        font-size: 2rem;
+        color: #F63D37;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:767.98px) {
+    section.home_banner {
+        background: linear-gradient(270.75deg, hsla(1, 100%, 91%, .49) -1.64%, hsla(0, 0%, 96%, 0) 82.2%);
+        .hero-short-desc{
+            font-size: 1.8rem;
+            color: #F63D37;
+            font-weight: 600;
+        }
+    }
+}
+
+section.home_banner h1 {
+    position: relative
+}
+
+section.home_banner h1 .heading {
+    font: 700 64px/64px Catamaran;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1
+}
+
+@media (max-width:1403.98px) {
+    section.home_banner h1 .heading {
+        font: 700 54px/54px Catamaran
+    }
+}
+
+@media (max-width:991.98px) {
+    section.home_banner h1 .heading {
+        font: 700 38px/49px Catamaran
+    }
+}
+
+section.home_banner h1 svg {
+    width: 495px;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    bottom: -10px
+}
+
+@media (max-width:1403.98px) {
+    section.home_banner h1 svg {
+        width: 420px
+    }
+}
+
+@media (max-width:991.98px) {
+    section.home_banner h1 svg {
+        width: 280px
+    }
+}
+
+section.home_banner h1 svg path {
+    stroke: #f63d37;
+    stroke-width: 5;
+    fill: none;
+    stroke-dasharray: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation: a 15s
+}
+
+section.home_banner h4 {
+    font: 300 24px/36px Catamaran
+}
+
+@media (max-width:991.98px) {
+    section.home_banner h4 {
+        font: 300 19px/26px Catamaran
+    }
+}
+
+section.home_banner .btn {
+    margin-top: 48px
+}
+
+@media (max-width:767.98px) {
+    section.home_banner .btn {
+        margin-top: 24px
+    }
+}
+
+
+
+@media (max-width:767.98px) {
+    section.home_banner .btn:last-child {
+        margin-left: 0
+    }
+}
+
+section.home_banner img {
+    // margin-right: 40px;
+    // border-radius: 18px;
+    // box-shadow: -12px -35px 56px #f63d3720
+}
+
+@media (max-width:767.98px) {
+    section.home_banner img {
+        margin-top: 48px;
+        box-shadow: none
+    }
+}
+
+section.home_banner .home_banner__logotyp {
+    position: absolute;
+    width: 116px;
+    height: 224.52px;
+    background: url(../img/logotyp_aw.svg);
+    right: 15px;
+    bottom: -10px
+}

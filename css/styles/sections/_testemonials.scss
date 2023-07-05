@@ -1,0 +1,134 @@
+.opinions {
+    background-image: url(../img/opinion_bg.svg);
+    background-size: cover;
+    background-color: #fffdfd;
+    padding: 101px 0 51px;
+    border-bottom: 1px solid #f63d37
+}
+
+.opinions h2 {
+    position: relative;
+    z-index: 5;
+    font: 600 48px/64px Catamaran;
+    color: #f63d37;
+    text-align: center
+}
+
+@media (max-width:767.98px) {
+    .opinions h2 {
+        font: 600 36px/43px Catamaran
+    }
+}
+
+.opinions h2:first-line {
+    color: #2b2727
+}
+
+.opinions h2 span {
+    font: 900 135px/64px Catamaran;
+    opacity: .06;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    color: #f63d37
+}
+
+@media (max-width:767.98px) {
+    .opinions h2 span {
+        font: 900 96px/0 Catamaran
+    }
+}
+
+.opinions h2 p {
+    font: 300 16px/24px Catamaran
+}
+
+.opinions p {
+    font: 300 24px/36px Catamaran;
+    margin-top: 24px;
+    max-width: 812px
+}
+
+.opinions .opinions_items {
+    margin-top: 90px
+}
+
+.opinions .opinions_items .opinions_item {
+    position: relative
+}
+
+.opinions .opinions_items .opinions_item .opinions_item__inner {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 32px rgba(48, 7, 5, .06), 0 0 24px rgba(77, 5, 5, .02), 0 0 6px rgba(66, 11, 11, .02);
+    border: 1px solid #f63d37;
+    border-radius: 4px;
+    padding: 24px 32px;
+    z-index: 2
+}
+
+.opinions .opinions_items .opinions_item .opinions_item__inner p {
+    margin-top: 24px;
+    font: 300 16px/24px Catamaran
+}
+
+.opinions .opinions_items .opinions_item .opinions_item__inner .opinions_item__creator {
+    margin-top: 32px
+}
+
+.opinions .opinions_items .opinions_item .opinions_item__inner a {
+    font: 700 16px/24px Catamaran
+}
+
+.opinions .opinions_items .opinions_item .opinions_item__inner img {
+    width: auto !important
+}
+
+.opinions .opinions_items .opinions_item .opinions_item__icon {
+    position: absolute;
+    top: -30px;
+    left: -33px;
+    width: 66px;
+    height: 50px;
+    background-image: url(../img/opinion_icon.svg);
+    background-repeat: no-repeat;
+    z-index: 1
+}
+
+@media (max-width:991.98px) {
+    .opinions .opinions_items .opinions_item .opinions_item__icon {
+        left: 0
+    }
+}
+
+ul.slick-dots {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative
+}
+
+ul.slick-dots li {
+    display: inline-block
+}
+
+ul.slick-dots li button {
+    width: 16px;
+    height: 6px;
+    background: #474242;
+    border-radius: 2px;
+    border: none;
+    margin: 0 12px;
+    font-size: 0
+}
+
+ul.slick-dots li.slick-active button {
+    width: 16px;
+    height: 16px;
+    background: #f63d37;
+    border-radius: 50%;
+    font-size: 0
+}

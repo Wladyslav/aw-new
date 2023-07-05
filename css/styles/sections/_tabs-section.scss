@@ -1,0 +1,233 @@
+section.home_tabs {
+    padding: 133px 0 128px;
+    border-bottom: 1px solid #f63d37
+}
+
+@media (max-width:767.98px) {
+    section.home_tabs button.btn {
+        text-align: left;
+        font-size: 20px
+    }
+}
+
+section.home_tabs h2 {
+    position: relative;
+    z-index: 5;
+    font: 700 64px/64px Catamaran;
+    color: #f63d37;
+    text-align: center;
+    margin-bottom: 64px
+}
+
+section.home_tabs h2:first-line {
+    color: #2b2727
+}
+
+@media (max-width:767.98px) {
+    section.home_tabs h2 {
+        font: 700 32px/32px Catamaran;
+        margin-bottom: 40px
+    }
+}
+
+section.home_tabs h2 span {
+    font: 700 135px/64px Catamaran;
+    opacity: .06;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    color: #f63d37
+}
+
+@media (max-width:767.98px) {
+    section.home_tabs h2 span {
+        font: 700 96px/0 Catamaran
+    }
+}
+
+section.home_tabs h2 p {
+    font: 300 16px/24px Catamaran
+}
+
+section.home_tabs nav .nav-tabs {
+    border-bottom: 0;
+    margin-left: 0;
+    margin-right: 0
+}
+
+section.home_tabs nav .nav-link {
+    position: relative;
+    text-align: left;
+    border-radius: 0
+}
+
+@media (max-width:991.98px) {
+    section.home_tabs nav .nav-link {
+        border-bottom: 1px solid #f63d37;
+        border-right: 0 !important;
+        border-left: 0 !important;
+        margin-bottom: 10px
+    }
+}
+
+@media (max-width:767.98px) {
+    section.home_tabs nav .nav-link {
+        padding: 16px 12px 12px
+    }
+}
+
+@media (max-width:575.98px) {
+    section.home_tabs nav .nav-link>div {
+        margin-left: 32px
+    }
+}
+
+section.home_tabs nav .nav-link:first-child {
+    border-right: 1px solid #f63d37
+}
+
+section.home_tabs nav .nav-link:first-child.active {
+    border-left: 0;
+    outline: 0
+}
+
+section.home_tabs nav .nav-link:last-child {
+    border-left: 1px solid #f63d37
+}
+
+section.home_tabs nav .nav-link:last-child.active {
+    border-right: 0;
+    outline: 0
+}
+
+section.home_tabs nav .nav-link.active {
+    border-bottom: 4px solid #f63d37;
+    border-top: 0;
+    background-color: #2b2727
+}
+
+section.home_tabs nav .nav-link.active .home_tabs--digit,
+section.home_tabs nav .nav-link.active .home_tabs--title,
+section.home_tabs nav .nav-link.active p {
+    color: #f8f7f7
+}
+
+section.home_tabs nav .nav-link.active#nav-1-tab {
+    border-left-width: 0
+}
+
+section.home_tabs nav .nav-link.active#nav-3-tab {
+    border-right-width: 0
+}
+
+section.home_tabs nav .nav-link span.home_tabs--digit {
+    top: 0;
+    left: 0;
+    font: 300 24px/24px Catamaran;
+    color: #f63d37;
+    margin-top: 8px
+}
+
+section.home_tabs nav .nav-link span.home_tabs--title {
+    font: 600 48px/57.6px Catamaran;
+    color: #2b2727
+}
+
+@media (max-width:1403.98px) {
+    section.home_tabs nav .nav-link span.home_tabs--title {
+        font: 600 33px/42.6px Catamaran
+    }
+}
+
+section.home_tabs nav .nav-link p {
+    font: 300 16px/24px Catamaran;
+    color: #2b2727
+}
+
+@media (max-width:767.98px) {
+    section.home_tabs nav .nav-link p {
+        display: none
+    }
+}
+
+section.home_tabs .tab-content {
+    margin-top: 96px
+}
+
+section.home_tabs .tab-content h1 {
+    font: 600 32px/38px Catamaran
+}
+
+section.home_tabs .tab-content h4 {
+    font: 300 16px/24px Catamaran;
+    max-width: 550px
+}
+
+section.home_tabs .tab-content .left-box {
+    padding: 42px 30px;
+    margin-left: -50px;
+    background: #fff;
+    box-shadow: -12px -48px 55px #f63d3720;
+    display: inline-block;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2
+}
+
+@media (max-width:991.98px) {
+    section.home_tabs .tab-content .left-box {
+        margin-left: auto;
+        width: 100%
+    }
+}
+
+section.home_tabs .home_tabs__newsletter {
+    padding: 24px 64px;
+    background: #2b2727;
+    border-radius: 4px;
+    margin-top: 66px
+}
+
+@media (max-width:767.98px) {
+    section.home_tabs .home_tabs__newsletter {
+        padding: 24px 15px
+    }
+}
+
+section.home_tabs .home_tabs__newsletter h3 {
+    font: 600 32px/38.4px Catamaran;
+    color: #fafbfc;
+    max-width: 813px
+}
+
+@media (max-width:767.98px) {
+    section.home_tabs .home_tabs__newsletter h3 {
+        font: 600 24px/28px Catamaran
+    }
+}
+
+section.home_tabs .home_tabs__newsletter input {
+    font: 300 16px/24px Catamaran;
+    color: #949494;
+    padding: 12px 18px;
+    width: 450px;
+    border-radius: 4px
+}
+
+@media (max-width:991.98px) {
+    section.home_tabs .home_tabs__newsletter input {
+        width: 100%
+    }
+}
+
+section.home_tabs .home_tabs__newsletter .btn {
+    font: 700 16px/24px Catamaran
+}
+
+@media (max-width:991.98px) {
+    section.home_tabs .home_tabs__newsletter .btn {
+        width: 100%;
+        margin-left: 0 !important
+    }
+}
