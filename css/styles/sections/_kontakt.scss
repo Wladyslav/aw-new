@@ -1,0 +1,36 @@
+.contact-section-wrapper{
+    .container{
+        .row{
+            .contact-data-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contact-section-heading{
+                    font-size: 3rem;
+                    font-weight: 600;
+                    line-height: 62px;
+                }
+                .contact-data{
+                    margin: 1.5rem 0;
+                    p{
+                        margin-bottom: 0!important;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        line-height: 2rem;
+                    }
+                    .contact-tel{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        color: #F63D37;
+                        margin: 1.25rem 0;
+                    }
+
+                }
+                
+            }
+            .contact-map{
+                min-height: 500px;
+            }
+        }
+    }
+}

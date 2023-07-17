@@ -5,7 +5,9 @@
 			>{{section.rbt_heading}}</h2>
 		{% endif %}
 		<div class="row justify-content-center rbt-row">
-
+			{% if section.rbt_topdesc %}
+				<div>{{section.rbt_topdesc}}</div>
+			{% endif %}
 
 			{% for rbt_item in section.rbt_wrap %}
 
@@ -20,6 +22,7 @@
 			{% if section.rbt_addesc %}
 				<div>{{section.rbt_addesc}}</div>
 			{% endif %}
+			
 		</div>
 	</div>
 </section>

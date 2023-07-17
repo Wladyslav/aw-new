@@ -1,6 +1,8 @@
 .cm-wrapper {
     position: relative;
-
+    .cm-content {
+    
+        
     .cm-text {
         position: relative;
         min-height: 80px;
@@ -8,8 +10,8 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        
-        
+
+
         span {
             display: inline-block;
             position: relative;
@@ -17,7 +19,7 @@
             height: 64px;
             background-color: #FEEEED;
             border-radius: 50%;
-    
+
             &::before {
                 content: "✔";
                 position: absolute;
@@ -27,49 +29,57 @@
                 top: -10px;
             }
         }
-    
+
         p {
             max-width: 950px;
             font-weight: 400;
-            flex-basis:calc(100% - 80px);
+            flex-basis: calc(100% - 80px);
             
+
         }
     }
+    }
 
-    
 }
 
 
-@media(min-width:768px) {
+@media(min-width:1430px) {
     .cm-wrapper {
-        .cm-text {
-            margin: 2rem;
-            justify-content: inherit;
-            &:nth-child(odd) {
-                justify-content: end;
-            }
-            span {
-                position: relative;
-                width: 82px;
-                height: 82px;
-                background-color: #FEEEED;
-                border-radius: 50%;
         
-                &::before {
-                    content: "✔";
-                    position: absolute;
-                    color: #F63D37;
-                    font-size: 64px;
-                    right: -5px;
-                    top: -10px;
+        .cm-content {
+            
+            .cm-text {
+                margin: 2rem;
+                justify-content: inherit;
+
+                &:nth-child(odd) {
+                    justify-content: end;
                 }
-            }
-            p {
-                font-size: 2rem;
-                line-height: 2.625rem;
-                margin-bottom: 0;
-                margin-left: 3rem;
-                flex-basis: inherit;
+
+                span {
+                    position: relative;
+                    width: 82px;
+                    height: 82px;
+                    background-color: #FEEEED;
+                    border-radius: 50%;
+
+                    &::before {
+                        content: "✔";
+                        position: absolute;
+                        color: #F63D37;
+                        font-size: 64px;
+                        right: -5px;
+                        top: -10px;
+                    }
+                }
+
+                p {
+                    font-size: 2rem;
+                    line-height: 2.625rem;
+                    margin-bottom: 0;
+                    margin-left: 3rem;
+                    flex-basis: inherit;
+                }
             }
         }
     }

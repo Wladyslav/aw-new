@@ -20,6 +20,9 @@
                                         <li class="item {% if item.children %}parent{% endif %} {% if item.current %}active{% endif %}">
                                             <a href="{{ item.link }}" class="nav-link">{{ item.title }}</a>
                                             {% if item.children %}
+                                                <div class="sub-menu-toggle"><span></span></div>
+                                                {% endif %}
+                                            {% if item.children %}
                                                 <ul class="sub-menu">
                                                     {% for child in item.children %}
                                                         <li {% if child.current %}class="active"{% endif %}>

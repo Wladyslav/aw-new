@@ -5,11 +5,13 @@
 				<h2 class="cm-heading">{{ section.cm_heading }}</h2>
 
 			{% endif %}
+			<div class="cm-content">
 			{% for check_mark in section.check_marks %}
 
 				<div class="cm-text"><span></span><p>{{ check_mark.cm_text }}</p></div>
 
 			{% endfor %}
+		</div>
 		</div>
 	</div>
 </section>

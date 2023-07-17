@@ -3,9 +3,7 @@
 
 
 use Timber\Timber;
-
-$context = Timber::context();
-$context['post'] = Timber::get_post();
+include(get_template_directory().'/global.php');
 $context['employees'] = Timber::get_posts( array(
     'post_type' => 'employees',
     'posts_per_page' => -1,

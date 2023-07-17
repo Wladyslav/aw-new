@@ -157,34 +157,23 @@
 
                 $('.statistics__icons--text span.digit').toLocaleString();
                 $('.multi-switch').multiSwitch({
-                    functionOnChange: function($element) {
-                        if ($('input.multi-switch').is(':checked')) {
-                            $('.statistics__icons--text span.digit').each(function() {
-                                $(this).prop('Counter', $(this).attr('d-before')).animate({
-                                    Counter: $(this).attr('d-after')
-                                }, {
-                                    duration: 4000,
-                                    easing: 'swing',
-                                    step: function(now) {
-                                        $(this).text(Math.ceil(now).toLocaleString());
-                                    }
-                                });
-                            });
-                        } else {
-                            $('.statistics__icons--text span.digit').each(function() {
-                                $(this).prop('Counter', $(this).attr('d-after')).animate({
-                                    Counter: $(this).attr('d-before')
-                                }, {
-                                    duration: 4000,
-                                    easing: 'swing',
-                                    step: function(now) {
-                                        $(this).text(Math.ceil(now).toLocaleString());
-                                    }
-                                });
-                            });
-                        }
-                    }
-                });
+    functionOnChange: function($element) {
+        if ($('input.multi-switch').is(':checked')) {
+            $('.statistics__icons--text span.digit').each(function() {
+                var counterValue = $(this).attr('d-after');
+                $(this).prop('Counter', counterValue);
+                $(this).text(Math.ceil(counterValue).toLocaleString());
+            });
+        } else {
+            $('.statistics__icons--text span.digit').each(function() {
+                var counterValue = $(this).attr('d-before');
+                $(this).prop('Counter', counterValue);
+                $(this).text(Math.ceil(counterValue).toLocaleString());
+            });
+        }
+    }
+});
+
 
                 $('.consultation-item .icon').on('click', function() {
                     var parent = $(this).parent();
