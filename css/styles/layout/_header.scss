@@ -1,6 +1,14 @@
 .main_header {
     border-bottom: .25px solid #f63d37;
-    box-shadow: 0 0 32px rgba(43, 39, 39, .04), 0 0 24px rgba(43, 39, 39, .07), 0 0 6px rgba(43, 39, 39, .04)
+    box-shadow: 0 0 32px rgba(43, 39, 39, .04), 0 0 24px rgba(43, 39, 39, .07), 0 0 6px rgba(43, 39, 39, .04);
+    @media(min-width:991px){
+        position: fixed;
+        width: 100%;
+        top:0;
+        z-index: 9999;
+        background-color: #FDFDFD;
+    }
+    
 }
 
 .main_header .navbar {
@@ -135,4 +143,32 @@
         stroke-dasharray: 0 1500;
         opacity: 0
     }
+}
+.sub-menu-toggle{
+        display: none;
+        position: absolute;
+        right: 5px;
+        padding: 0;
+        top: 50%;
+        @media(min-width:991px){
+            display: block;
+        }
+        span{
+                transform: translateY(-50%) rotate(90deg);
+                width: 14px;
+                height: 14px;
+                display: block;
+                transition: transform .35s ease;
+                background: #F63D37;
+                -webkit-mask: url(https://agencjatest.cfolks.pl/wp-content/uploads/2023/06/Frame.svg);
+                mask: url(https://agencjatest.cfolks.pl/wp-content/uploads/2023/06/Frame.svg);
+                -webkit-mask-size: contain;
+                mask-size: contain;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+            }
+}
+
+.nav-link:hover + .sub-menu-toggle span {
+    transform: translateY(-60%) rotate(270deg);
 }
