@@ -119,15 +119,15 @@
   background-image: url(../img/button_arrow.svg);
   background-repeat: no-repeat;
   position: absolute;
-  margin-left: 1rem;
+  right: -31px;
   top: 50%;
   transform: translateY(-50%);
   transition: all .3s linear
 }
 
-// .with-arrow:hover:after {
-//   right: 0px
-// }
+.with-arrow:hover:after {
+  right: -15px
+}
 
 
 

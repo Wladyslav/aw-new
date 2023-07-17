@@ -138,7 +138,10 @@
 }
 
 .statistics .statistics__right .statistics__outer {
+    position: absolute;
+    bottom: 0;
     width: 745px;
+    right: 28px
 }
 
 @media (max-width:1403.98px) {
@@ -163,7 +166,7 @@
 
 @media (max-width:575.98px) {
     .statistics .statistics__right .statistics__outer .statistics__icons {
-        
+        margin-right: -40px;
         margin-left: 20px;
         padding: 5px 20px
     }

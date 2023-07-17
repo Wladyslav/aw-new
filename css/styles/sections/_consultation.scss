@@ -150,8 +150,7 @@
 
 .consultation .consultation-items .consultation-item.hide .consultation-item__end,
 .consultation .consultation-items .consultation-item.hide .consultation-item__left p {
-    display: none;
-
+    display: none
 }
 
 .consultation .consultation-items .consultation-item .icon {
@@ -180,7 +179,7 @@
 }
 
 .consultation .consultation-items .consultation-item .consultation-item__left {
-    max-width: 480px;
+    max-width: 441px;
     position: relative
 }
 
@@ -196,11 +195,7 @@
 
 .consultation .consultation-items .consultation-item .consultation-item__left p {
     margin: 24px 0;
-    font: 300 16px/24px Catamaran;
-    @media(min-width: 768px){
-        min-height: 195px;
-    }
-    
+    font: 300 16px/24px Catamaran
 }
 
 .consultation .consultation-items .consultation-item .consultation-item__button {

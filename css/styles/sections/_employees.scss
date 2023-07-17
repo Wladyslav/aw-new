@@ -2,52 +2,44 @@
     .employees-content {
         display: flex;
         flex-wrap: wrap;
-        gap: 2.5rem;
+        justify-content: space-evenly;
+        gap: 3rem;
         position: relative;
-        justify-content: space-between;
 
         .single-employee {
-            position: relative;
             display: flex;
             flex-direction: column;
-            justify-content: center;            
+            justify-content: center;
+            text-align: center;
 
             @media(min-width:1200px) {
                 // width: 16%;
             }
 
             .team-item-img {
+                
+                object-fit: cover;
                 width: 292px;
                 height: 292px;
                 object-position: top;
-                border-radius: 8px 8px 0 0;
+                position: relative;
+
+                
+
             }
 
             .person-name-kontakt {
                 font-weight: 600;
-                color: #ffffff;
-                
+                margin-top: 1rem;
 
                 @media(min-width:768px) {
                     font-size: 2rem;
-                    padding: 0 1rem;
                 }
             }
 
             .person-job-kontakt {
                 @media(min-width:768px) {
                     font-size: 1.25rem;
-                    padding: 0 1rem;
-                }
-            }
-            &:nth-child(odd) {
-                .person-name-kontakt {
-                    background-color: #f53c37;
-                }
-            }
-            &:nth-child(even) {
-                .person-name-kontakt {
-                    background-color: #252525;
                 }
             }
         }
