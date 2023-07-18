@@ -120,7 +120,7 @@ input {
 
 .btn {
   padding: 12px 32px;
-  font: 500 22px/36px Catamaran;
+  font: 600 18px/36px Catamaran;
   border-radius: 12px;
   border: 1px solid #f63d37;
   letter-spacing: 0.5px;
@@ -2543,7 +2543,7 @@ ul.slick-dots li.slick-active button {
   position: relative;
 }
 .text-number-wrapper .text-number-heading {
-  margin-bottom: 16px;
+  margin-bottom: 42px;
 }
 .text-number-wrapper .tn-border {
   box-shadow: 0px 29px 110px rgba(246, 61, 55, 0.19);
@@ -2576,8 +2576,8 @@ ul.slick-dots li.slick-active button {
   margin-top: 1.25rem;
 }
 .text-number-wrapper .additional-numb-desc p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -2631,6 +2631,7 @@ ul.slick-dots li.slick-active button {
 #faqAccordion {
   box-shadow: 0px 29px 110px rgba(246, 61, 55, 0.19);
   border-radius: 18px;
+  padding-top: 20px;
 }
 #faqAccordion h3 {
   text-align: center;
@@ -2719,7 +2720,8 @@ ul.slick-dots li.slick-active button {
     top: -10px;
   }
   .cm-wrapper .cm-content .cm-text p {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     line-height: 2.625rem;
     margin-bottom: 0;
     margin-left: 3rem;
