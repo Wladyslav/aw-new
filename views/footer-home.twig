@@ -1,121 +1,150 @@
-    <div class="n-footer">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-6 col-sm-4 col-lg">
-                    <h4>{{option.footer_1_h1}}</h4>
-                    <ul>
-                        {% for item in menu_new_footer_1.items %}
-                        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-4 col-lg">
-                    <h4>{{option.footer_2_h1}}</h4>
-                    <ul>
-                        {% for item in menu_new_footer_2.items %}
-                        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-4 col-lg">
-                    <h4>{{option.footer_3_h1}}</h4>
-                    <ul>
-                        {% for item in menu_new_footer_3.items %}
-                        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-4 col-lg">
-                    <h4>{{option.footer_4_h1}}</h4>
-                    <ul>
-                        {% for item in menu_new_footer_4.items %}
-                        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-4 col-lg">
-                    <h4>{{option.footer_5_h1}}</h4>
-                    <ul>
-                        {% for item in menu_new_footer_5.items %}
-                        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+<div class="n-footer">
+    <div class="container">
+        <div class="row justify-content-between">
+            <span style="font-size:1.7rem;">Jesteśmy członkiem <b>PrimeAvenueGroup</b></span>
+            <div class="img-group"></div>
+        </div>
 
-            <div class="row footer__middle">
-                <div class="col-12 col-lg-6">
-                    <div class="row">
-                        <div class="col-8 d-none d-sm-block">
-                            <h4 class="d-inline-block help">{{option.footer_text1}}</h4>
-                        </div>
-                        <div class="col-4">
-                            <a href="/kontakt" class="btn btn-small ms-xl-4 mb-3 mb-xl-0 btn-red">Kontakt</a>
-                        </div>
-                        <div class="col-12">
-                            <h4>{{option.footer_text2}}+48 530 554 037</h4>
-                        </div>
+        <div class="row justify-content-between">
+            <div class="col-6 col-sm-4 col-lg">
+                <h4>{{option.footer_1_h1}}</h4>
+                <ul>
+                    {% for item in menu_new_footer_1.items %}
+                    <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-lg">
+                <h4>{{option.footer_2_h1}}</h4>
+                <ul>
+                    {% for item in menu_new_footer_2.items %}
+                    <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-lg">
+                <h4>{{option.footer_3_h1}}</h4>
+                <ul>
+                    {% for item in menu_new_footer_3.items %}
+                    <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-lg">
+                <h4>{{option.footer_4_h1}}</h4>
+                <ul>
+                    {% for item in menu_new_footer_4.items %}
+                    <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-lg">
+                <h4>{{option.footer_5_h1}}</h4>
+                <ul>
+                    {% for item in menu_new_footer_5.items %}
+                    <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="row footer__middle">
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-8 d-none d-sm-block">
+                        <h4 class="d-inline-block help">{{option.footer_text1}}</h4>
+                    </div>
+                    <div class="col-4">
+                        <a href="/kontakt" class="btn btn-small ms-xl-4 mb-3 mb-xl-0 btn-red">Kontakt</a>
+                    </div>
+                    <div class="col-12">
+                        <h4>{{option.footer_text2}}+48 530 554 037</h4>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-md-end">
-                    <img src="{{option.header_logo_light}}" class="me-5" />
-                    <p>{{option.adres}}</p>
-                </div>
             </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-md-end">
+                <img src="{{option.header_logo_light}}" class="me-5" />
+                <p>{{option.adres}}</p>
+            </div>
+        </div>
 
-            <div class="row footer_end">
-                <div class="col-12 text-center">
-                    <span>{{option.footer}}</span>
-                </div>
+        <div class="row footer_end">
+            <div class="col-12 text-center">
+                <span>{{option.footer}}</span>
             </div>
         </div>
     </div>
+</div>
 
-    <script type="text/javascript">
-        (function($) {
-            $(document).ready(function() {
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
 
-                $('.grid_debug__control input').on('change', function() {
-                    $('.grid_debug').toggleClass('d-none');
-                });
+            $('.grid_debug__control input').on('change', function () {
+                $('.grid_debug').toggleClass('d-none');
+            });
 
+            $('.grid_debug__control .width > span').html($(window).width() + 17 + "px");
+            $(window).resize(function () {
                 $('.grid_debug__control .width > span').html($(window).width() + 17 + "px");
-                $(window).resize(function() {
-                    $('.grid_debug__control .width > span').html($(window).width() + 17 + "px");
-                });
+            });
 
-                $('.home_clients_banner_element').slick({
+            $('.home_clients_banner_element').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+
+            $('.opinions_items > div').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 3000,
+                arrows: true,
+                dots: true,
+                pauseOnHover: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+            $(".opinions_items button.slick-arrow.slick-next").appendTo('.opinions_items ul.slick-dots');
+            $(".opinions_items button.slick-arrow.slick-prev").appendTo('.opinions_items ul.slick-dots');
+
+            if ($(window).width() < 768) {
+                $('.home_blog-items').slick({
                     slidesToShow: 6,
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 1500,
-                    arrows: false,
-                    dots: false,
+                    arrows: true,
+                    dots: true,
                     pauseOnHover: false,
                     responsive: [{
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 4
-                        }
-                    }, {
-                        breakpoint: 520,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    }]
-                });
-                
-                $('.opinions_items > div').slick({
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    autoplay: false,
-                    autoplaySpeed: 3000,
-                    arrows: true,
-                    dots: true,
-                    pauseOnHover: true,
-                    responsive: [{
-                        breakpoint: 768,
-                        settings: {
                             slidesToShow: 1
                         }
                     }, {
@@ -125,147 +154,123 @@
                         }
                     }]
                 });
-                $(".opinions_items button.slick-arrow.slick-next").appendTo('.opinions_items ul.slick-dots');
-                $(".opinions_items button.slick-arrow.slick-prev").appendTo('.opinions_items ul.slick-dots');
+                $(".home_blog-items button.slick-arrow.slick-next").appendTo('.home_blog-items ul.slick-dots');
+                $(".home_blog-items button.slick-arrow.slick-prev").appendTo('.home_blog-items ul.slick-dots');
+            }
 
-                if ($(window).width() < 768) {
-                    $('.home_blog-items').slick({
-                        slidesToShow: 6,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 1500,
-                        arrows: true,
-                        dots: true,
-                        pauseOnHover: false,
-                        responsive: [{
+
+
+            $('.statistics__icons--text span.digit').toLocaleString();
+            $('.multi-switch').multiSwitch({
+                functionOnChange: function ($element) {
+                    if ($('input.multi-switch').is(':checked')) {
+                        $('.statistics__icons--text span.digit').each(function () {
+                            var counterValue = $(this).attr('d-after');
+                            $(this).prop('Counter', counterValue);
+                            $(this).text(Math.ceil(counterValue).toLocaleString());
+                        });
+                    } else {
+                        $('.statistics__icons--text span.digit').each(function () {
+                            var counterValue = $(this).attr('d-before');
+                            $(this).prop('Counter', counterValue);
+                            $(this).text(Math.ceil(counterValue).toLocaleString());
+                        });
+                    }
+                }
+            });
+
+
+            $('.consultation-item .icon').on('click', function () {
+                var parent = $(this).parent();
+                if ($(parent).hasClass('hide')) {
+                    $(parent).removeClass('hide');
+                    $(this).toggleClass('down up');
+                } else {
+                    $(parent).addClass('hide');
+                    $(this).toggleClass('down up');
+                }
+            });
+
+            if ($(window).width() < 768) {
+                $('.consultation-item').addClass('hide');
+            }
+
+
+        });
+        $(document).ready(function () {
+            if ($(window).width() <= 768) {
+                $('.price-packages').slick({
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 3,
+                    dots: true,
+                    initialSlide: 1,
+                    responsive: [
+                        {
                             breakpoint: 768,
                             settings: {
-                                slidesToShow: 1
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 1,
+                                initialSlide: 1
                             }
-                        }, {
-                            breakpoint: 520,
-                            settings: {
-                                slidesToShow: 1
-                            }
-                        }]
-                    });
-                    $(".home_blog-items button.slick-arrow.slick-next").appendTo('.home_blog-items ul.slick-dots');
-                    $(".home_blog-items button.slick-arrow.slick-prev").appendTo('.home_blog-items ul.slick-dots');
-                }
-                
-                
-
-                $('.statistics__icons--text span.digit').toLocaleString();
-                $('.multi-switch').multiSwitch({
-    functionOnChange: function($element) {
-        if ($('input.multi-switch').is(':checked')) {
-            $('.statistics__icons--text span.digit').each(function() {
-                var counterValue = $(this).attr('d-after');
-                $(this).prop('Counter', counterValue);
-                $(this).text(Math.ceil(counterValue).toLocaleString());
-            });
-        } else {
-            $('.statistics__icons--text span.digit').each(function() {
-                var counterValue = $(this).attr('d-before');
-                $(this).prop('Counter', counterValue);
-                $(this).text(Math.ceil(counterValue).toLocaleString());
-            });
-        }
-    }
-});
-
-
-                $('.consultation-item .icon').on('click', function() {
-                    var parent = $(this).parent();
-                    if ($(parent).hasClass('hide')) {
-                        $(parent).removeClass('hide');
-                        $(this).toggleClass('down up');
-                    } else {
-                        $(parent).addClass('hide');
-                        $(this).toggleClass('down up');
-                    }
+                        }
+                    ]
                 });
-
-                if($(window).width() < 768) {
-                    $('.consultation-item').addClass('hide');
-                }
-
-
-            });
-            $(document).ready(function(){
-  if ($(window).width() <= 768) {
-    $('.price-packages').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      dots: true,
-      initialSlide: 1,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1,
-            initialSlide: 1
-          }
-        }
-      ]
-    });
-  }
-});
-
-        })(jQuery);
-
-        
-    </script>
-    {{ function('wp_footer', '') }}
-    
-     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    // Pobierz wszystkie elementy nawigacji
-    var navLinks = document.querySelectorAll('.is-about-item');
-
-    // Pobierz wszystkie sekcje artykułu
-    var sections = document.querySelectorAll('.article-content h2, .article-content h3');
-
-    // Funkcja do sprawdzenia, która sekcja jest obecnie widoczna
-    function checkSection() {
-        var fromTop = window.scrollY + window.innerHeight / 2;
-        console.log("Test");
-        // Przejdź przez wszystkie sekcje
-        sections.forEach(function(section, index) {
-            var sectionTop = section.offsetTop;
-            var sectionBottom = sectionTop + section.offsetHeight;
-
-            // Sprawdź, czy jesteśmy w tej sekcji
-            if (fromTop >= sectionTop && fromTop < sectionBottom) {
-                // Znajdź odpowiadający link nawigacyjny
-                var linkElement = document.querySelector('.is-about-item a[href*=' + section.id + ']');
-                if (linkElement) {
-                    var navLink = linkElement.parentNode;
-
-                // Dodaj klasę 'active' do linku nawigacyjnego
-                navLink.classList.add('active');
-
-                // Usuń klasę 'active' z innych linków nawigacyjnych
-                navLinks.forEach(function(otherNavLink) {
-                    if (otherNavLink != navLink) {
-                        otherNavLink.classList.remove('active');
-                    }
-                });
-            }
             }
         });
-    }
 
-    // Wywołaj funkcję przy przewijaniu strony
-    window.addEventListener('scroll', checkSection);
-});
+    })(jQuery);
 
 
 </script>
-    </body>
+{{ function('wp_footer', '') }}
 
-    </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Pobierz wszystkie elementy nawigacji
+        var navLinks = document.querySelectorAll('.is-about-item');
+
+        // Pobierz wszystkie sekcje artykułu
+        var sections = document.querySelectorAll('.article-content h2, .article-content h3');
+
+        // Funkcja do sprawdzenia, która sekcja jest obecnie widoczna
+        function checkSection() {
+            var fromTop = window.scrollY + window.innerHeight / 2;
+            console.log("Test");
+            // Przejdź przez wszystkie sekcje
+            sections.forEach(function (section, index) {
+                var sectionTop = section.offsetTop;
+                var sectionBottom = sectionTop + section.offsetHeight;
+
+                // Sprawdź, czy jesteśmy w tej sekcji
+                if (fromTop >= sectionTop && fromTop < sectionBottom) {
+                    // Znajdź odpowiadający link nawigacyjny
+                    var linkElement = document.querySelector('.is-about-item a[href*=' + section.id + ']');
+                    if (linkElement) {
+                        var navLink = linkElement.parentNode;
+
+                        // Dodaj klasę 'active' do linku nawigacyjnego
+                        navLink.classList.add('active');
+
+                        // Usuń klasę 'active' z innych linków nawigacyjnych
+                        navLinks.forEach(function (otherNavLink) {
+                            if (otherNavLink != navLink) {
+                                otherNavLink.classList.remove('active');
+                            }
+                        });
+                    }
+                }
+            });
+        }
+
+        // Wywołaj funkcję przy przewijaniu strony
+        window.addEventListener('scroll', checkSection);
+    });
+
+
+</script>
+</body>
+
+</html>

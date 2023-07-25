@@ -4,6 +4,7 @@
     position: relative
 }
 
+
 .home_form .btn {
     margin-top: 16px
 }
@@ -18,6 +19,9 @@
 @media (max-width:767.98px) {
     .home_form h2 {
         font: 600 36px/43px Catamaran
+    }
+    .form-margin{
+        margin-top:90px;
     }
 }
 

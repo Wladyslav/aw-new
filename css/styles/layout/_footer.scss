@@ -1,5 +1,5 @@
 div.n-footer {
-    padding: 71px 0 62px;
+    padding: 50px 0 62px;
     background: #2b2727;
     color: #f8f7f7
 }
@@ -50,6 +50,16 @@ div.n-footer .footer__middle {
 
 div.n-footer .footer__middle img {
     height: 62px
+}
+
+div.img-group {
+    background:url("/wp-content/uploads/2023/07/stopka-grupa-hold-mob.svg") no-repeat center;
+    height:125vw;
+
+    @media (min-width: 768px){
+        background:url("/wp-content/uploads/2023/07/stopka-grupa-hold.svg") no-repeat center;
+        height:20vw;
+    }
 }
 
 div.n-footer .footer_end {

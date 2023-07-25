@@ -12,6 +12,28 @@ section.home_banner {
         }
     }
 
+    .button-below {
+        display: inline-flex;
+        text-decoration: none; /* Usuń podkreślenie */
+        margin-top: 50px;
+        font-weight:600;
+      }
+
+      }
+
+
+      .button-below i {
+        margin-left: 10px;
+        animation: slide 1s ease-in-out infinite; /* Dodaj animację */
+        position:relative;
+
+        @keyframes slide {
+            0% { top: 10px; } /* Na początku animacji ikona jest na górze */
+            50% { top: 20px; } /* W połowie animacji ikona jest na dole */
+            100% { top: 10px; } /* Na końcu animacji ikona wraca na górę */
+          }
+      }
+
     .hero-short-desc {
         font-size: 2rem;
         color: #F63D37;
@@ -19,7 +41,6 @@ section.home_banner {
         line-height: 2.2rem;
     }
 
-}
 
 @media (max-width:767.98px) {
     section.home_banner {
@@ -89,22 +110,22 @@ section.home_banner h1 svg path {
 }
 
 section.home_banner h4 {
-    font: 300 24px/36px Catamaran
+    font: 500 16px/28px Catamaran;
 }
 
 @media (max-width:991.98px) {
     section.home_banner h4 {
-        font: 300 19px/26px Catamaran
+        font: 300 19px/26px Catamaran;
     }
 }
 
 section.home_banner .btn {
-    margin-top: 48px
+    margin-top: 48px;
 }
 
 @media (max-width:767.98px) {
     section.home_banner .btn {
-        margin-top: 24px
+        margin-top: 24px;
     }
 }
 
@@ -116,11 +137,6 @@ section.home_banner .btn {
     }
 }
 
-section.home_banner img {
-    // margin-right: 40px;
-    // border-radius: 18px;
-    // box-shadow: -12px -35px 56px #f63d3720
-}
 
 @media (max-width:767.98px) {
     section.home_banner img {

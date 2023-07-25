@@ -1,6 +1,6 @@
 section.home_tabs {
-    padding: 133px 0 128px;
-    border-bottom: 1px solid #f63d37
+    padding: 0px 0 128px;
+    // border-bottom: 1px solid #f63d37;
 }
 
 @media (max-width:767.98px) {
@@ -16,7 +16,8 @@ section.home_tabs h2 {
     font: 700 64px/64px Catamaran;
     color: #f63d37;
     text-align: center;
-    margin-bottom: 64px
+    margin-bottom: 64px;
+    scroll-margin-top:100px;
 }
 
 section.home_tabs h2:first-line {

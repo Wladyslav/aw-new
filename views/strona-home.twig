@@ -13,7 +13,8 @@
                 </h1>
                 <h4>{{o.home_banner_h4}}
                 </h4>
-                <button  class="btn btn-red popup-open">Bezpłatna wycena</button>
+                <a href="#section-below" class="button-below">Zjedź niżej</br>i dowiedz się więcej <i class="fas fa-arrow-down"></i> <!-- to jest ikonka strzałki w dół -->
+                </a>
             </div>
             <div class="d-flex col-12 col-md-6">
                 <img src="{{o.home_banner_img.url}}" class="img-fluid my-md-auto" alt="banner 01" />
@@ -27,7 +28,7 @@
     {{ do_shortcode('[hubspot type="form" portal="139608152" id="e44224d7-59e4-42b3-bb57-86b0d07b0f61"]') }}  
     </div>  
 </div>
-<section class="home_clients_banner">
+{# <section class="home_clients_banner">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -42,12 +43,73 @@
             </div>
         </div>
     </div>
+</section> #}
+
+<section id="section-below" class="consultation scroll-margin"> 
+    <div class="consultation__bg bg_1"></div>
+    <div class="consultation__bg bg_2"></div>
+    <div class="consultation__bg bg_3"></div>
+    <div class="consultation__bg bg_4"></div>
+    <div class="consultation__bg bg_5"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5 g-md-0">
+                <h2>
+                    {{o.consultation_h1}}
+                </h2>
+            </div>
+
+            <div class="col-12 col-lg-7">
+                <div class="row consultation__right position-relative">
+                    <div class="col-12 col-lg-10 g-md-0 offset-0 offset-lg-2">
+                        <p>{{o.consultation_desc}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="consultation-items row align-items-stretch">
+            {% for c in consultations %}
+            <div class="col-12 col-lg-6 accordion">
+                <div class="consultation-item">
+                    <div class="icon down"></div>
+                    <div class="row">
+                        <div class="col-12 col-md-10 col-lg-10 order-2 order-md-1">
+                            <div class="consultation-item__left">
+                                <h3>{{c.title}}</h3>
+                                <p>{{c.desc}}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-2 col-lg-2 d-flex align-items-center justify-content-md-end order-1 order-md-2">
+                            <img src="{{c.meta('icon').url}}" class="img-fluid" alt="{{c.icon.alt}}">
+                        </div>
+                        <div class="consultation-item__end col-12 order-3 order-md-3">
+                            <div class="consultation-item__button">
+                                <button class="btn no-border arrow ps-0">
+                                    <a href="{{c.button_link}}">{{c.button}}</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>
+
+
+
+
+
 
 <section class="home_tabs">
     <div class="container">
         <div class="row">
             <div class="col-12">
+
                 <h2>
                     {{o.home_tabs_h1}}
                 </h2>
@@ -153,6 +215,54 @@
     </div>
 </section>
 
+<section class="banner_newsletter">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12 col-xl-9 position-relative">
+                <div class="banner_newsletter__box mx-auto">
+                    <h2>{{o.banner_newsletter_h1}}</h2>
+                    <p>{{o.banner_newsletter_desc}}</p>
+                    <a href="/kontakt"><button class="btn btn-red d-block mx-auto">Wyślij zapytanie</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-12 col-lg-5">
+                <h2>
+                    {{o.our_partners_h1}}
+                </h2>
+
+                <p class="mt-5 d-none d-lg-block d-xl-block">
+                    {{o.our_partners_left_desc}}
+                </p>
+
+            </div>
+
+            <div class="col-12 col-lg-7">
+                <div class="row partners__right position-relative justify-content-end">
+                    <p class="mt-3 mt-lg-5 d-lg-none d-xl-none">
+                        {{o.our_partners_left_desc}}
+                    </p>
+
+                    <div class="col-12 col-lg-10 g-lg-0 offset-lg-2">
+                        <div class="row justify-content-center">
+                            {% for p in o.our_partners_logotypes %}
+                            <div class="col-4 col-lg-3 my-auto text-center">
+                                <img src="{{p.logo.url}}" class="img-fluid" alt="{{p.logo.alt}}" />
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="statistics">
     <div class="container">
         <div class="row g-0">
@@ -196,110 +306,6 @@
                                 </div>
                                 {% endfor %}
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="consultation">
-    <div class="consultation__bg bg_1"></div>
-    <div class="consultation__bg bg_2"></div>
-    <div class="consultation__bg bg_3"></div>
-    <div class="consultation__bg bg_4"></div>
-    <div class="consultation__bg bg_5"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-5 g-md-0">
-                <h2>
-                    {{o.consultation_h1}}
-                </h2>
-            </div>
-
-            <div class="col-12 col-lg-7">
-                <div class="row consultation__right position-relative">
-                    <div class="col-12 col-lg-10 g-md-0 offset-0 offset-lg-2">
-                        <p>{{o.consultation_desc}}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="consultation-items row align-items-stretch">
-            {% for c in consultations %}
-            <div class="col-12 col-lg-6 accordion">
-                <div class="consultation-item">
-                    <div class="icon down"></div>
-                    <div class="row">
-                        <div class="col-12 col-md-10 col-lg-10 order-2 order-md-1">
-                            <div class="consultation-item__left">
-                                <h3>{{c.title}}</h3>
-                                <p>{{c.desc}}</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-2 col-lg-2 d-flex align-items-center justify-content-md-end order-1 order-md-2">
-                            <img src="{{c.meta('icon').url}}" class="img-fluid" alt="{{c.icon.alt}}">
-                        </div>
-                        <div class="consultation-item__end col-12 order-3 order-md-3">
-                            <div class="consultation-item__button">
-                                <button class="btn no-border arrow ps-0">
-                                    <a href="{{c.button_link}}">{{c.button}}</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="banner_newsletter">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12 col-xl-9 position-relative">
-                <div class="banner_newsletter__box mx-auto">
-                    <h2>{{o.banner_newsletter_h1}}</h2>
-                    <p>{{o.banner_newsletter_desc}}</p>
-                    <button class="btn btn-red d-block mx-auto popup-open">{{o.banner_newsletter_button}}</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="partners">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-12 col-lg-5">
-                <h2>
-                    {{o.our_partners_h1}}
-                </h2>
-
-                <p class="mt-5 d-none d-lg-block d-xl-block">
-                    {{o.our_partners_left_desc}}
-                </p>
-
-            </div>
-
-            <div class="col-12 col-lg-7">
-                <div class="row partners__right position-relative justify-content-end">
-                    <p class="mt-3 mt-lg-5 d-lg-none d-xl-none">
-                        {{o.our_partners_left_desc}}
-                    </p>
-
-                    <div class="col-12 col-lg-10 g-lg-0 offset-lg-2">
-                        <div class="row justify-content-center">
-                            {% for p in o.our_partners_logotypes %}
-                            <div class="col-4 col-lg-3 my-auto text-center">
-                                <img src="{{p.logo.url}}" class="img-fluid" alt="{{p.logo.alt}}" />
-                            </div>
-                            {% endfor %}
                         </div>
                     </div>
                 </div>

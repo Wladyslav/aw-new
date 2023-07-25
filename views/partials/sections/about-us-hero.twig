@@ -1,0 +1,27 @@
+<section class="auhero-wrapper">
+    <div class="auhero-img">
+        <div class="page-breadcrumbs">{{ function('yoast_breadcrumb') }}</div>
+        <img src="{{ section.aus_img }}" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="aus-hero-content col-12">
+                <h1 class="off-loop">
+                    {{ section.aus_heading }}
+                </h1>
+            </div>
+
+            <div class="aus-hero-content col-12">
+                <h4 class="hero-short-desc">
+                    {{ section.aus_short_desc }}
+                </h4>
+            </div>
+
+            <div class="aus-hero-content col-12">
+                <h4 class="hero-aus-desc">
+                    {{ section.aus_desc }}
+                </h4>
+                <button  class="btn btn-red popup-open">Skontaktuj się z nami</button>
+            </div>
+        </div>
+    </section>
